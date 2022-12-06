@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Livvic&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap');
+
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --navColor: Royalblue;
+    --bodyColor: #333;
+    --titleFonts: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+.navbar{
+    /* --bgColor: Royalblue;
+    --titleFonts: 'Ubuntu', sans-serif; */
+    font-family: var(--titleFonts);
+    background-color: var(--navColor);
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1.5rem;
+}
+
+.navbar .brand-img{
+    height: 9vh;
+}
+
+.navbar .member-options{
+    /* border: 2px solid white; */
+    /* display: none; */
+    position: absolute;
+    width: 100%;
+    top: 10vh;
+    left: 0;
+    padding: 1.5rem 0;
+}
+.navbar .member-options .login-signup-box{
+    margin: 1rem;
+    border-bottom: 2px solid white;
+    height: 3rem;
+}
+
+.navbar .member-options .login-signup-box .login-signup-btn{
+    color: #DDD;
+    font-size: 1.3rem;
+}
+
+.navbar .bar-icon{
+    font-size: 2rem;
+}
+
+.main-section{
+    height: 90vh;
+    background-color: #333;
+    background-color: var(--bodyColor);
+}

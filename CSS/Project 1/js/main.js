@@ -1,7 +1,11 @@
 $('.owl-carousel').owlCarousel({
-    // loop:true,
-    margin:10,
+    loop:true,
+    // margin: 0,
     nav:true,
+    dots: false,
+    // autoplay: true,
+    // autoplayTimeout: 3000,
+    navText: ['<i class="fa-solid fa-arrow-left"></i>','<i class="fa-solid fa-arrow-right"></i>'],
     // nav:false,
     responsive:{
         0:{
@@ -14,4 +18,4 @@ $('.owl-carousel').owlCarousel({
         //     items:5
         // }
     }
-})
+}) 

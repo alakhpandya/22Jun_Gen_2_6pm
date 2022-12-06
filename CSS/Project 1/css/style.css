@@ -271,7 +271,46 @@ ul{
     padding: 3rem 1rem 1rem;
 }
 
-.carousel{
-    padding: 5rem 10vw;
-    border: 4px solid red;
+/* ---------------------- Carousel section ---------------------- */
+
+.carousel-container{
+    border: 2px solid blue;
+    padding: 0 10vw 0 12vw;
+}
+
+.carousel .item{
+    border: 2px solid maroon; 
+    height: 300px;
+    padding: 1rem;
+    margin: 0 2rem;
+}
+
+.carousel .student-info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.carousel .student-info .stu-profile-pic{
+    width: 80px;
+    border-radius: 50%;
+}
+
+.carousel .owl-nav{
+    /* border: 2px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev{
+    color: #d25f39;
+    padding: 0.3rem !important;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover, .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: #d25f39;
 }
