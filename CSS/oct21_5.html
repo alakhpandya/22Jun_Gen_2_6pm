@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .container{
+        border: red 3px solid;
+        height: 100vh;
+        display: flex;
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        /* justify-content: flex-start;        default */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between; */
+        /* justify-content: space-around; */
+        /* justify-content: center; */
+        /* justify-content: flex-end; */
+        gap: 1.5rem;
+
+        /* align-items: center; */
+        /* align-items: flex-end; */
+
+        /* flex-direction: row;    default */
+        flex-direction: column;
+
+        /* justify-content: center; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: flex-end; */
+
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+
+        /* flex-wrap: nowrap;  default */
+        /* flex-wrap: wrap; */
+        /* flex-wrap: wrap-reverse; */
+    }
+    .box{
+        border: 2px solid blue;
+        /* height: 50px;
+        width: 50px; */
+        flex-basis: 100px;      /* width when flex-direction is row and if flex-direction is column, this becomes height */
+    }
+    #item1{
+        background-color: lightblue;
+        /* flex-shrink: 1;     default */
+        /* flex-shrink: 2;
+        flex-grow: 4; */
+    }
+    #item2{
+        background-color: lightcoral;
+        order: 1;
+    }
+    #item3{
+        background-color: lightgoldenrodyellow;
+        /* flex-grow: 0;       default */
+        /* flex-grow: 1; */
+    }
+    #item4{
+        background-color: lightseagreen;
+        order: 2;
+    }
+    #item5{
+        background-color: purple;
+        /* flex-grow: 2; */
+    }
+    #item6{
+        background-color: chartreuse;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box" id="item1">Box1</div>
+        <div class="box" id="item2">Box2</div>
+        <div class="box" id="item3">Box3</div>
+        <div class="box" id="item4">Box4</div>
+        <div class="box" id="item5">Box5</div>
+        <div class="box" id="item6">Box6</div>
+    </div>
+</body>
+</html>

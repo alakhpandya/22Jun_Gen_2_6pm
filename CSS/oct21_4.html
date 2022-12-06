@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* CSS RESET */
+    *, ::before, ::after{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body{
+        /* We use margin to give space between two elements */
+        /* 
+        We use padding for one of the two purposes:
+        1. we want to push the content inside the box, away from its border.
+        2. we want to increase the size of the element
+        */
+    }
+    .btn-box{
+        border: 2px solid maroon;
+    }
+    /* button{ */
+        /* display: block; */
+        /* margin-top: 10px; */
+        /* margin-bottom: 20px; */
+        /* margin-left:30px */
+        /* margin-right: 50px; */
+        
+        /* equal margin in all directions */
+        /* margin: 20px; */
+
+        /* margin: top-bottom left-right */
+        /* margin: 10px 20px; */
+
+        /* margin: top right bottom left */
+        /* margin: 10px 20px 30px 40px; */
+
+        /* margin: top left-right bottom */
+        /* margin: 10px 20px 50px; */
+    /* } */
+
+    #btn1{
+        /* margin-right: 2rem; */
+        /* width: 100px; */
+        /* display: block; */
+        /* margin: auto will work only in block element */
+        margin: auto;
+
+        /* padding: 0.5rem 1rem; */
+    }
+    #btn2{
+        margin-left: 2rem;
+    }
+
+    .btn{
+        border: 2px solid blue;
+        width: fit-content;
+    }
+    #btn5{
+        margin-bottom: 2rem;
+    }
+    #btn6{
+        margin-top: 2rem;
+    }
+    #btn7{
+        margin-left: auto;
+    }
+    #btn8{
+        /* margin-right: auto;
+        margin-left: auto; */
+        margin: auto;
+        /* margin: 2rem auto; */
+    }
+    #btn6{
+        width: 200px;
+        margin: auto;
+    }
+
+    /* Padding */
+    .container{
+        border: 2px solid blue;
+        /* margin-top: 1rem;
+        margin-bottom: 1rem; */
+
+        /* padding in each direction individually */
+        /* padding-top: 1rem;
+        padding-right: 2rem;
+        padding-bottom: 3rem;
+        padding-left: 4rem; */
+
+        /* padding: equal padding in all directions */
+        /* padding: 1rem; */
+
+        /* padding: top-bottom left-right; */
+        /* padding: 1rem 2rem; */
+
+        /* padding: clockwise; */
+        /* padding: 1rem 1.5rem 2rem 2.5rem; */
+
+        /* padding: top left-right bottom */
+        /* padding: 1rem 2rem 3rem; */
+        width: 350px;
+        margin: 1rem auto;
+        /* box-sizing: content-box;        default */
+        box-sizing: border-box;
+    }
+
+    #join-btn{
+        text-decoration: none;
+        margin-left: 1rem;
+        background-color: royalblue;
+        color: white;
+        padding: 0.25rem 0.75rem;
+        border-radius: 8px;
+        border: 1px solid royalblue;
+    }
+    #join-btn:hover{
+        background-color: white;
+        color: royalblue;
+    }
+
+    .container1{
+        padding: 0.75rem 1.2rem;
+        border: 0.75em solid red;
+    }
+
+    .container2{
+        /* width: 388.4px; */
+    }
+</style>
+<body>
+    <div class="btn-box">
+        <button id="btn1">Button1</button>
+        <!-- <button id="btn2">Button2</button>
+        <button id="btn3">Button3</button>
+        <button id="btn4">Button4</button> -->
+    </div>
+    <div class="btn-box">
+        <div class="btn" id="btn5">Button5</div>
+        <div class="btn" id="btn6">Button - 6</div>
+        <div class="btn" id="btn7">Special Button - 7</div>
+        <div class="btn" id="btn8">Button8</div>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Motias ipsum corrupti error sint inventore ratione fugit provident maxii cupiditate nam.
+    </div>
+
+    <a id="join-btn" href="#">Join Now</a>
+
+    <!-- Box Sizing -->
+    <div class="container1 container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Motias ipsum corrupti error sint inventore ratione fugit provident maxii cupiditate nam.
+    </div>
+    <div class="container2 container">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Motias ipsum corrupti error sint inventore ratione fugit provident maxii cupiditate nam.
+    </div>
+</body>
+</html>

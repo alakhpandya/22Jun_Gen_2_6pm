@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="">
+        <div>
+            First Name: <input type="text">
+        </div>
+        <div>
+            <label for="lName">Last Name:</label>
+            <!-- <input name="lastName" type="text" required id="lName"> -->
+            <input name="lastName" type="text" id="lName">
+        </div>
+        <div>
+            <div>
+                <input type="email" placeholder="Email Address" name="email" id="">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Password">
+            </div>
+            <div>
+                <input type="password" name="" id="" placeholder="Confirm Password">
+            </div>
+        </div>
+        <div>
+            Chose Color for your T-shirt: <input type="color" name="tColor" id="">
+        </div>
+        <div>
+            Departure Date: <input type="date" name="" id="">
+        </div>
+        <div>
+            Departure Time: <input type="time" name="" id="">
+        </div>
+        <div>
+            Month & Year of Passing: <input type="month" name="" id="">
+        </div>
+        <div>
+            Enter date & time:
+            <input type="datetime" name="" id="">
+        </div>
+        <div>
+            Upload your passport size photo: <input type="file" name="" id="">
+        </div>
+        <div>
+            <input type="hidden" name="">
+        </div>
+        <div>
+            Age: <input type="number" name="" id="">
+        </div>
+        <div>
+            <input type="radio" name="gender" id=""> <label for="">Male</label>
+            <input type="radio" name="gender" id=""> <label for="">Female</label>
+            <input type="radio" name="gender" id=""> <label for="">I don't prefer to say</label>
+        </div>
+        <div>
+            Select your budget:
+            <!-- 5000 <input type="range" name="budget" id=""> 100000 -->
+            <input type="range" step="1000" value="12000" min="5000" max="100000" oninput="this.nextElementSibling.value = this.value">
+            <output>12000</output>
+        </div>
+
+
+
+
+        <div>
+            <!-- <input type="checkbox" required name="tnc" id="tnc"> -->
+            <input type="checkbox" name="tnc" id="tnc">
+            <label for="tnc">I agree to the terms of use.</label>
+        </div>
+        <div>
+            <input type="checkbox" checked name="" id="whatsapp">
+            <label for="whatsapp">Send me regular updates on whatsapp.</label>
+        </div>
+        <div>
+            <input type="button" value="Click Me">
+            <input type="submit" value="I'm in!">
+        </div>
+    </form>
+</body>
+
+<script>
+    document.registrationForm.ageInputId.oninput = function(){
+    document.registrationForm.ageOutputId.value = document.registrationForm.ageInputId.value;
+ }
+</script>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .btn-box{
+        border: 2px solid blue;
+        position:relative
+    }
+    #btn1{
+        /* position: static;   default */
+        position: relative;
+        /* Move with respect to its original position */
+        
+        /* bottom: 20px; */
+        /* left: 20px; */
+        /* top: 50px; */
+        /* right: 150px; */
+    }
+
+    #btn1:hover{
+        /* bottom: 50px; */
+        bottom: 5px;
+    }
+
+    #btn2{
+        position: absolute;
+        /* Does not keep its original position */
+        /* Move with respect to parent whose position is relative */
+        top: 5px;
+        /* bottom: 5px; */
+        /* left: 20px; */
+        right: 50px;
+    }
+
+    #btn3{
+
+    }
+    
+</style>
+<body>
+    
+    <br><br><br><br><br>
+    <div class="btn-box">
+        <br><br><br><br>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        
+        <!-- <button id="btn1">Click this to close the window</button> -->
+        <button id="btn1">Button 1</button>
+        <button id="btn2">Button 2</button>
+        <button id="btn3">Button No 3</button>
+        <button id="btn4">Button 4</button>
+        <button id="btn5">Button 5</button>
+        
+        <br><br><br><br>
+        <br><br><br><br>
+    </div>
+</body>
+</html>

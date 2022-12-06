@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    /* Unit - 1: rem : font-size of root */
+        /* 
+            1 rem = 16px
+        */
+    /* em: font-size of element/parent */
+    button{
+        height: 2em;    
+        width: 5em;
+    }
+    #btn1{
+        font-size: 2rem;
+        height: 3rem;
+        width: 10rem;
+    }
+    #btn2{
+        font-size: 40px;
+    }
+
+    /* 196 px = 1 inch */
+    #para-1{
+        font-size: 1.5rem;
+        
+    }
+    #para-2{
+        font-size: 24px;
+    }
+    /* vw = % of view port width */
+    /* vh = % of view port height */
+    img{
+        /* width: 100vw; */
+        width: 50%;
+    }
+    /* height/width in % means % of height/width of the parent of that element */
+    #img-box{
+        width: 50%;
+    }
+</style>
+<body>
+    <img src="/images/pixabay1.jpg" alt="">
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, mollitia.</h1>
+    <p id="para-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, repellendus provident minus, accusamus consequatur id labore, at quis necessitatibus laboriosam sunt! Iste beatae aspernatur tempora ea a consectetur animi reiciendis, vitae corporis odit adipisci sint cumque corrupti quidem in, quos eos! Error cum officiis, aperiam architecto fugit modi adipisci. Ratione!</p>
+    <button id="btn1">Lorem.</button>
+    <button id="btn2">Sunt.</button>
+    <button id="btn3">Officia?</button>
+    <button id="btn4">Repudiandae?</button>
+    <button id="btn5">Fuga.</button>
+    <p id="para-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores, repellendus provident minus, accusamus consequatur id labore, at quis necessitatibus laboriosam sunt! Iste beatae aspernatur tempora ea a consectetur animi reiciendis, vitae corporis odit adipisci sint cumque corrupti quidem in, quos eos! Error cum officiis, aperiam architecto fugit modi adipisci. Ratione!</p>
+    <div id="img-box">
+        <img src="/images/pixabay2.jpg" alt="">
+    </div>
+</body>
+</html>

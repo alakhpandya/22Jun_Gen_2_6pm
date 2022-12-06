@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+        /* text-align: left; */
+        /* text-align: right; */
+    }
+
+    h1::before {
+        content: "I";
+        display: block;
+        background-color: orangered;
+    }
+
+    h1::after {
+        content: "India";
+        display: block;
+        background-color: green;
+    }
+
+    /* #before{
+        color: blue;
+    }
+    #after{
+        color: red;
+    } */
+
+    .req::after{
+        content: "*";
+        color: red;
+    }
+</style>
+
+<body>
+    <!-- Before & After Pseudo Elements -->
+    <!-- <h1><span id="before">I</span>Love<span id="after">India</span></h1> -->
+    <h1>Love</h1>
+    <form action="">
+        <div>
+            <label class="req" for="">First Name: </label>
+            <input type="text">
+        </div>
+        <div>
+            <label for="">Last Name: </label>
+            <input type="text">
+        </div>
+        <div>
+            <label class="req" for="">Email: </label>
+            <input type="email">
+        </div>
+        <div>
+            <label for="">Mobile No: </label>
+            <input type="tel">
+        </div>
+        <div>
+            <label class="req" for="">Password</label>
+            <input type="password" name="" id="">
+        </div>
+        <div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+</body>
+
+</html>

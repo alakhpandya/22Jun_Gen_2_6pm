@@ -1,0 +1,277 @@
+/* ---------------------- Google Fonts ---------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Open+Sans:wght@700&display=swap');
+
+/* 
+font-family: 'Inter', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+/* ---------------------- CSS Reset ---------------------- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ---------------------- Global Styling ---------------------- */
+body{
+    font-family: 'Inter', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.btn{
+    font-weight: 600;
+    font-size: 1rem;
+    color: white;
+    background-color: #3996D2;
+    padding: 1rem 1.5rem;
+    border-radius: 5px;
+}
+.btn:hover{
+    background-color: #1272b1;
+}
+.blue-font{
+    color: #3996d2;
+}
+.bold-font{
+    font-weight: 700;
+}
+
+/* ---------------------- Navbar ---------------------- */
+
+.navbar{
+    background-color: lightpink;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    padding: 0 12vw;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 500;
+}
+.navbar img{
+    height: 40px;
+}
+.purple-font{
+    color: #201845;
+}
+
+/* ---------------------- intro section ---------------------- */
+.intro{
+    padding: 0 10vw 0 12vw;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+    gap: 10rem;
+    margin: 3rem 0;
+    color: #44555f;
+}
+#text-above-title{
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #201845;
+}
+.intro h1{
+    font-size: 2.9rem;
+    margin: 0.7rem 0;
+}
+
+.intro h1 + p{
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.intro img{
+    width: 500px;
+}
+
+.intro ul{
+    font-size: 1rem;
+}
+.check-icon{
+    color: #3996D2;
+    margin-right: 0.5rem;
+}
+.intro ul li{
+    margin-top: 2rem;
+}
+
+.intro ul + p{
+    margin: 2.5rem 0;
+    font-size: 1rem;
+    color: #44555f;
+    background-image: radial-gradient(#dde9f5, rgba(248,250,252,.8));
+    padding: 0.5rem 1rem;
+    white-space: nowrap;
+    border-radius: 7px;
+}
+
+.intro-text p a{
+    font-weight: 600;
+}
+.intro-text .next-webinar{
+    margin-top: 3rem;
+}
+
+.timer-container{
+    display: flex;
+    font-family: 'Open Sans', sans-serif;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+}
+.timer-container .timer-item{
+    text-align: center;
+}
+.timer-container .timer-unit{
+    font-size: 1.9rem;
+}
+.timer-container .timer-unit + p{
+    font-size: 0.75rem;
+}
+.timer-container span{
+    font-size: 1.8rem;
+}
+
+/* ---------------------- companies section ---------------------- */
+.companies-container{
+    /* border: 2px solid red; */
+    margin: 5rem 10vw 5rem 12vw ;
+    text-align: center;
+}
+.companies-container h1{
+    margin-bottom: 3rem;
+}
+.companies{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.companies img{
+    width: 100px;
+    margin-bottom: 3rem;
+}
+
+
+
+/* ---------------------- achievements section ---------------------- */
+.achievements{
+    display: flex;
+    justify-content: center;
+    margin: 0 10vw 0 12vw;
+    padding: 0 1rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 255, 0.5);
+    overflow: hidden;
+    height: 170px;
+}
+
+.achievement-box{
+    display: flex;
+    text-align: center;
+}
+.achievement-box > div{
+    margin: 1rem;
+}
+.achievement-box .dashed-line-svg{
+    /* border: 2px solid red;  */
+    height: 200px;
+    /* width: 10px; */
+    padding: 0;
+}
+
+.achievement-box .number{
+    font-size: 3rem;
+    font-weight: 700;
+    color: #3996d2;
+}
+.achievement-box .achievement-text{
+    font-size: 1.2rem;
+    color: #142631;
+}
+
+/* ---------------------- features section ---------------------- */
+
+.features{
+    background-color: #DBE9FE;
+    padding: 10rem;
+    margin-top: 10rem;
+}
+
+
+
+
+/* ---------------------- trainers section ---------------------- */
+.trainers{
+    background: linear-gradient(to bottom, #9fd8fd, #ffffff);
+
+    padding-bottom: 10rem;
+}
+
+.trainers .upper-cards{
+    display: flex;
+    /* justify-content: center; */
+    gap: 3rem;
+}
+
+.card{
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.card .trainer-img-box{
+    position: relative;
+    height: 200px;
+}
+
+.card .trainer-photo{
+    height:180px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card .linked-in-img{
+    box-sizing: content-box;
+    height:25px;
+    background-color: white;
+    border: 6px solid white;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 0;
+    z-index: 1;
+}
+.card .circle{
+    border: 2px solid #1272b1;
+    background-color: #91cff8;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(30%, -30%);
+}
+
+
+.card .trainer-text-box{
+    background-color: white;
+    text-align: center;
+    padding: 3rem 1rem 1rem;
+}
+
+.carousel{
+    padding: 5rem 10vw;
+    border: 4px solid red;
+}

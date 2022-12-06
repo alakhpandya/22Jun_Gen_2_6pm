@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #box1{
+        height: 50px;
+        width: 50px;
+        background-color: green;
+        /* animation-name: move-box; */
+        animation-name: move-box2;
+        animation-duration: 4s;
+        position: absolute;
+        animation-iteration-count: infinite;
+    }
+
+
+    @keyframes move-box{
+        from{
+            top: 0px;
+        }
+        to{
+            top: 400px;
+        }
+    }
+
+    @keyframes move-box2 {
+        0%{
+            top: 10px;
+            left: 10px;
+        }
+        25%{
+            top: 400px;
+            left: 10px;
+            transform: rotate(90deg);
+            background-color: red;
+        }
+        50%{
+            top: 400px;
+            left: 400px;
+            border-radius: 50%;
+
+        }
+        75%{
+            top: 10px;
+            left: 400px;
+        }
+        100%{
+            top: 10px;
+            left: 10px;
+        }
+    }
+</style>
+<body>
+    <div id="box1"></div>
+</body>
+</html>

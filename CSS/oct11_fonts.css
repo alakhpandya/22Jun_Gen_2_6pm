@@ -1,0 +1,22 @@
+/* ------------------- title fonts ------------------- */
+@font-face {
+    font-family: title-fonts;
+    src: url("/fonts/Lobster/Lobster-Regular.ttf");
+}
+/* ------------------- para-1 fonts ------------------- */
+@font-face {
+    font-family: para-1;
+    src: url("/fonts/Amaranth/Amaranth-Regular.ttf");
+}
+
+/* ------------------- para-2 fonts ------------------- */
+@font-face {
+    font-family: "dancing script";
+    src: url("/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf");
+}
+
+/* ------------------- para-3 fonts ------------------- */
+@font-face {
+    font-family: ubuntu;
+    src: url("/fonts/Ubuntu/Ubuntu-Regular.ttf");
+}

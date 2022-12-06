@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* display: grid */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: rgb(213, 216, 240);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+    }
+    .container{
+        /* border: 2px solid red; */
+        display: grid;
+        /* grid-template-columns: 300px 400px 200px 300px; */
+        /* grid-template-columns: 22vw 22vw 22vw 22vw; */
+        /* grid-template-columns: repeat(4, 22vw); */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        grid-template-columns: repeat(4, 1fr);
+        gap: 2rem;
+    }
+
+    .box {
+        border: 2px solid black;
+        padding: 1rem;
+        border-radius: 10px;
+    }
+
+    .box .name{
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 1.1rem;
+        font-weight: bolder;
+    }
+    .box .title{
+        font-family: sans-serif;
+        font-size: 0.8rem ;
+        margin-bottom: 1rem;
+    }
+    .box .message-title{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 1.3rem;
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
+    .box .message{
+        font-family: sans-serif;
+        font-size: 1rem;
+    }
+
+    #item1,
+    #item2,
+    #item5 {
+        color: white;
+    }
+
+    #item3,
+    #item4 {
+        background-color: white;
+    }
+
+    #item1 {
+        background-color: blueviolet;
+        grid-column: span 2;
+    }
+
+    #item2 {
+        background-color: rgb(60, 73, 110);
+    }
+    #item3{
+        grid-row: span 2;
+    }
+
+    #item5 {
+        background-color: rgb(29, 28, 28);
+        grid-column: span 2;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="box" id="item1">
+            <h2 class="name">John Doe</h2>
+            <p class="title">Lorem, ipsum dolor.</p>
+
+            <h2 class="message-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem nostrum
+                id nihil, sed reprehenderit autem delectus error dolorem maxime?</h2>
+            <p class="message">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut, facere
+                consectetur hic eligendi assumenda quidem a maiores rerum explicabo recusandae reprehenderit nulla.
+                Maiores, rerum. Beatae rerum eveniet suscipit quos a veritatis explicabo, facilis harum esse excepturi
+                laudantium hic aliquam inventore id ad fugit? Saepe architecto blanditiis repellendus porro iure?</p>
+        </div>
+
+        <div class="box" id="item2">
+            <h2 class="name">John Doe</h2>
+            <p class="title">Lorem, ipsum dolor.</p>
+
+            <h2 class="message-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus.</h2>
+            <p class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, dignissimos! Numquam
+                officiis dicta, ipsam error laboriosam, odio doloribus voluptatum eum aliquam quae soluta omnis
+                inventore nulla consectetur obcaecati eveniet dolores.</p>
+        </div>
+
+        <div class="box" id="item3">
+            <h2 class="name">John Doe</h2>
+            <p class="title">Lorem, ipsum dolor.</p>
+
+            <h2 class="message-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus.</h2>
+            <p class="message">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, ab rerum! Suscipit
+                voluptatum numquam dignissimos fugiat assumenda reiciendis atque, at quaerat. Perferendis molestias hic
+                sint maxime quia sed minus. Perspiciatis necessitatibus eaque modi molestiae maiores error cupiditate
+                illo enim ex laboriosam possimus eum in iste, dolore odio aut dicta voluptatibus natus rem?
+                Reprehenderit quo eum nihil, eveniet impedit, soluta vel fugit doloribus dolorem officia error ex
+                dolores aspernatur. Eum, temporibus!</p>
+        </div>
+
+        <div class="box" id="item4">
+            <h2 class="name">John Doe</h2>
+            <p class="title">Lorem, ipsum dolor.</p>
+
+            <h2 class="message-title">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus.</h2>
+            <p class="message">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet, dignissimos! Numquam
+                officiis dicta, ipsam error laboriosam, odio doloribus voluptatum eum aliquam quae soluta omnis
+                inventore nulla consectetur obcaecati eveniet dolores.</p>
+        </div>
+
+        <div class="box" id="item5">
+            <h2 class="name">John Doe</h2>
+            <p class="title">Lorem, ipsum dolor.</p>
+
+            <h2 class="message-title">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam voluptatem nostrum
+                id nihil, sed reprehenderit autem delectus error dolorem maxime?</h2>
+            <p class="message">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Adipisci voluptate facere,
+                optio aperiam beatae est amet minima ipsa atque perspiciatis iusto similique, hic commodi quos veniam
+                blanditiis asperiores porro doloremque! Quas quibusdam incidunt consectetur saepe in asperiores,
+                dolorum, iste tempore aut recusandae, aliquam animi debitis similique quidem ullam eveniet error?</p>
+        </div>
+    </div>
+</body>
+
+</html>

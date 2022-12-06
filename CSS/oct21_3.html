@@ -1,0 +1,45 @@
+<!-- tool tip -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        background-color: lightpink;
+    }
+    h1{
+        color: maroon;
+    }
+    p{
+        color: brown;
+    }
+    a{
+        text-decoration: none;
+        color: blue;
+        position: relative;
+    }
+
+    a:hover::after{
+        content: attr(data-tooltip);
+        background-color: black;
+        padding: 0.5rem 1rem;
+        color: lightpink;
+        border-radius: 10px;
+        position: absolute;
+        bottom: 100%;
+        /* bottom: 30px; */
+        left: 20px;
+        white-space: nowrap;
+    }
+</style>
+<body>
+    <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam obcaecati vel aspernatur sapiente similique nihil!</h1>
+    <hr>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <a data-tooltip="Subscribe to our youtube channel!" href="">Voluptatem impedit</a> rerum tempora harum distinctio nesciunt. Optio debitis aspernatur doloremque ratione. Officiis ullam id corporis eius necessitatibus consequatur natus <a data-tooltip="Give us a heart on instagram!" href="">asperiores recusandae,</a> inventore sed odit est cum voluptate et. Doloremque maiores inventore ex officiis porro totam aliquam fuga temporibus corrupti accusamus. Repellendus esse nihil omnis illo voluptas sed est sapiente dolore accusantium nisi vero optio, aperiam odio minima. Et accusantium reiciendis sunt aliquam alias cum vitae placeat quam, sequi, impedit eius sed id earum magni optio amet nam nostrum ipsum consequatur esse nisi exercitationem ratione cupiditate quidem! Blanditiis porro maiores laudantium dignissimos tempora sapiente aperiam suscipit itaque. <a data-tooltip="Join our facebook comunity..." href="">Aliquam magni</a> amet veritatis porro, ex non neque inventore sed mollitia, corporis fuga sunt qui iste, natus est? A alias culpa expedita, quia maiores mollitia, et totam ipsa consectetur explicabo tenetur quas ullam at. Quas eos, aliquam eum fugit nisi incidunt laboriosam sapiente, iusto, doloremque ipsam cupiditate obcaecati impedit eligendi? Nesciunt facere debitis sed velit harum? Veniam saepe aperiam, tempore non, quia iusto qui dolorum perspiciatis quod nostrum, at nisi? Nisi facilis sit ipsa est sed assumenda, necessitatibus debitis quidem? Perferendis, ipsam dolorum ducimus reprehenderit corporis, placeat ea molestiae incidunt rerum voluptate odio non nisi, autem officiis praesentium nemo debitis doloribus! Facere, optio? Architecto fuga possimus fugit perferendis? Aspernatur, quidem impedit voluptatem ex illo consectetur tempora iusto magni reiciendis fugit quis dolores laboriosam sed enim eius exercitationem iste delectus quo repellendus facere in? Ea, eum, tempora velit error mollitia atque ullam harum dolores fugiat maxime, nam soluta? Repellat dolorem, itaque quo tempore quis velit voluptas! Laborum corrupti suscipit recusandae numquam ullam sapiente eaque aliquam praesentium facere repellat id optio, esse quae accusantium soluta rerum repudiandae! Quibusdam dicta iure molestiae facere accusamus ducimus. <a data-tooltip="Connect with us on linked in!" href="">Sunt,</a> fugit omnis et natus, magni, deleniti ea vel eum aliquam doloremque corrupti.</p>
+</body>
+</html>
