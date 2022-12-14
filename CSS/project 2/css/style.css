@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Livvic&family=Ubuntu:ital,wght@0,400;0,700;1,700&display=swap');
 
-/* CSS Reset */
+/* -------------------------- CSS Reset -------------------------- */
 *{
     margin: 0;
     padding: 0;
@@ -11,11 +11,21 @@
     --navColor: Royalblue;
     --bodyColor: #333;
     --titleFonts: 'Ubuntu', sans-serif;
+    --titleFontWeight: 700;
+    --col-light: #ddd;
+    --bodyFonts: 'Livvic', sans-serif;
+}
+
+body{
+    font-family: var(--bodyFonts);
 }
 
 a{
     text-decoration: none;
 }
+
+/* -------------------------- Navbar -------------------------- */
+
 .navbar{
     /* --bgColor: Royalblue;
     --titleFonts: 'Ubuntu', sans-serif; */
@@ -33,23 +43,27 @@ a{
 }
 
 .navbar .member-options{
-    /* border: 2px solid white; */
-    /* display: none; */
+    display: none;
     position: absolute;
     width: 100%;
     top: 10vh;
     left: 0;
     padding: 1.5rem 0;
+    background-color: var(--col-light);
 }
 .navbar .member-options .login-signup-box{
     margin: 1rem;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--bodyColor);
     height: 3rem;
 }
 
 .navbar .member-options .login-signup-box .login-signup-btn{
-    color: #DDD;
+    color: var(--bodyColor);
     font-size: 1.3rem;
+    cursor: pointer;
+}
+.navbar .member-options .login-signup-box .login-signup-btn:hover{
+    color: var(--bodyColor);
 }
 
 .navbar .bar-icon{
@@ -58,6 +72,95 @@ a{
 
 .main-section{
     height: 90vh;
-    background-color: #333;
     background-color: var(--bodyColor);
+    display: flex;
+    align-items: center;
+}
+
+/* -------------------------- Login Page -------------------------- */
+
+.form-container{
+    background-color: var(--col-light);
+    width: 90%;
+    margin: auto;
+    border-radius: 15px;
+    padding: 2rem 1rem 1rem;
+}
+
+.form-container .login-signup-form{
+    border: 2px solid var(--navColor);
+    border-radius: 15px;
+    padding: 1rem;
+    position: relative;
+}
+
+.login-signup-form .form-title{
+    font-family: var(--titleFonts);
+    font-size: 2rem;
+    font-weight: var(--titleFontWeight);
+    position: absolute;
+    top: 0;
+    left: 10px;
+    transform: translateY(-60%);
+    background-color: var(--col-light);
+}
+
+.login-signup-form .input-box{
+    /* border: 2px solid red; */
+    width: 90%;
+    margin: 1.5rem auto;
+    position: relative;
+}
+
+.login-signup-form .input-box input{
+    width: 100%;
+    height: 2.5rem;
+    padding-left: 20px;
+    font-size: 1.3rem;
+    background-color: var(--col-light);
+    border: none;
+    border-bottom: 1px solid var(--navColor);
+}
+.login-signup-form .input-box input:focus, .login-signup-form .input-box input:valid{
+    outline: none;
+    border: 2px solid var(--navColor);
+    border-radius: 10px;
+}
+
+.login-signup-form .input-box label{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--col-light);
+    transition: 0.5s;
+}
+
+.login-signup-form .input-box input:focus + label, .login-signup-form .input-box input:valid + label{
+    top: 0;
+    left: 10px;
+    font-size: 0.8rem;
+}
+
+
+
+@media screen and (min-width : 650px) {
+    .navbar .nav-toggle{
+        display: none;
+    }
+    .navbar .member-options{
+        position: static;
+        display: flex;
+        width: fit-content;
+        padding: 0;
+        background-color: var(--navColor);
+    }
+    .navbar .member-options .login-signup-box{
+        border: none;
+        height: fit-content;
+    }
+    .navbar .member-options .login-signup-box .login-signup-btn{
+        color: var(--col-light);
+        font-size: 1.5rem;
+    }
 }
