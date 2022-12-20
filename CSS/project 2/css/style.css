@@ -62,13 +62,12 @@ a{
     font-size: 1.3rem;
     cursor: pointer;
 }
-.navbar .member-options .login-signup-box .login-signup-btn:hover{
-    color: var(--bodyColor);
-}
 
 .navbar .bar-icon{
     font-size: 2rem;
 }
+
+/* -------------------------- Login Page -------------------------- */
 
 .main-section{
     height: 90vh;
@@ -77,21 +76,26 @@ a{
     align-items: center;
 }
 
-/* -------------------------- Login Page -------------------------- */
+.signup-main-section{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    height: fit-content;
+}
 
 .form-container{
     background-color: var(--col-light);
-    width: 90%;
+    width: 98%;
+    max-width: 470px;
+    padding: 2rem 0.3rem 0.3rem;
     margin: auto;
     border-radius: 15px;
-    padding: 2rem 1rem 1rem;
 }
 
 .form-container .login-signup-form{
     border: 2px solid var(--navColor);
     border-radius: 15px;
-    padding: 1rem;
     position: relative;
+    padding: 0.3rem;
 }
 
 .login-signup-form .form-title{
@@ -103,6 +107,9 @@ a{
     left: 10px;
     transform: translateY(-60%);
     background-color: var(--col-light);
+}
+.login-signup-form .user-details-expanded{
+    display: none;
 }
 
 .login-signup-form .input-box{
@@ -141,8 +148,73 @@ a{
     left: 10px;
     font-size: 0.8rem;
 }
+.login-signup-form .input-box .eye-icon{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.login-signup-form .gender-box{
+    padding: 0 5%;
+    margin-bottom: 1rem;
+}
+
+.remember-me-box, .submit-box, .create-account-forgot-pwd-box{
+    width: 100%;
+    margin: auto;
+}
+
+.remember-me-box{
+    margin-bottom: 1rem;
+}
+.submit-box{
+    width: 90%;
+    margin:auto;
+    margin-bottom: 1rem;
+}
+.submit-box input{
+    width: 100%;
+    font-size: 1.5rem;
+    height: 2.5rem;
+    background-color: var(--navColor);
+    color: var(--col-light);
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid var(--navColor);
+}
+.submit-box input:hover{
+    background-color: var(--col-light);
+    color: var(--navColor);
+}
+.create-account-forgot-pwd-box{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: space-between;
+}
+.create-account-forgot-pwd-box a{
+    color: var(--navColor);
+}
+.create-account-forgot-pwd-box a:hover{
+    text-decoration: underline;
+}
 
 
+@media screen and (min-width : 290px){
+    .remember-me-box, .submit-box, .create-account-forgot-pwd-box, .login-signup-form .input-box{
+        width: 90%;
+    }
+    .form-container{
+        width: 90%;
+        padding: 2rem 1rem 1rem;
+    }
+    .form-container .login-signup-form{
+        padding: 1rem;
+    }
+    .signup-main-section{
+        height: 90vh;
+    }
+}
 
 @media screen and (min-width : 650px) {
     .navbar .nav-toggle{
@@ -162,5 +234,24 @@ a{
     .navbar .member-options .login-signup-box .login-signup-btn{
         color: var(--col-light);
         font-size: 1.5rem;
+    }
+    .login-signup-form .gender-box{
+        display: flex;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+}
+
+@media screen and (min-width : 768px){
+    .login-signup-form .user-details-expanded{
+        display: flex;
+        /* gap: 1rem; */
+        justify-content: space-between;
+    }
+    .login-signup-form .user-details{
+        display: none;
+    }
+    .form-container{
+        max-width: 600px;
     }
 }
