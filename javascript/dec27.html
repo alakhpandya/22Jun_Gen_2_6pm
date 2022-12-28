@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body id="body">
+
+    <!-- inline javascripts -->
+    <div style="text-align: right;">
+        <button onclick="print()">Print This Page</button>
+    </div>
+    <h1 id="site-title">Welcome to the world of javascript!</h1>
+    <button onclick="document.getElementById('site-title').style.display = 'none'">Hide Title</button>
+
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti dolore asperiores, temporibus quis accusantium excepturi!</p>
+    <a onclick="document.getElementById('para1').style.backgroundColor = 'yellow'" href="#">Style This Para</a>
+
+    <p id="blank-para">Where are you?</p>
+    <button onclick="document.getElementById('blank-para').innerText = 'Hey, I am here!'">Change Text</button>
+
+    <button onclick="document.getElementById('today').innerText = Date()">See today's date</button>
+    <span id="today"></span>
+    <br>
+    <div>
+        <button onclick="document.getElementById('bulb-img').src = '/images/bulb_on.jpg';document.getElementById('body').style.backgroundColor = 'black'">ON</button>
+        <img height="400px" src="/images/bulb_off.png" id="bulb-img" alt="">
+        <button onclick="document.getElementById('bulb-img').src = '/images/bulb_off.png';document.getElementById('body').style.backgroundColor = 'white'">OFF</button>
+    </div>
+    <!-- <button onclick="document.write('Hello World!')">Black Magic</button> -->
+</body>
+
+<!-- internal javascript -->
+<script>
+    // Single line comment
+    /*
+    Multiline
+    comment
+    */
+
+    // ways to print outputs in js:
+    /*
+    1. Using innerText
+    2. Using alert
+    3. Using print
+    4. Using document.write()
+    5. Logging on console
+    */
+    // alert('Hello World!');
+    'use strict';
+    a = 5;
+    // alert('How are you?');
+    b = 10; c = 
+    20;
+    B = 30;
+    Alakh = 500;
+    // print();
+    // console.Log("Hello World!"); 
+    console.log(a+b);
+    a1 = 12;
+    // a 2 = 13;        Invalid
+    // 3a = 14     invalid
+    a_4 = 14;
+    // a-5 = 15        invalid
+    javaScript = 15;
+    a$6 = 16;       // VALID
+    // Cannot start with digit
+
+
+    // Declaring using 'var'
+    var a;
+    var b, c, B, d = 39, e;
+    e = 41;
+</script>
+
+<!-- External JS -->
+<script src="/dec27.js"></script>
+</html>
+<!-- 
+Mongo DB    (No SQL)
+Express JS
+React JS        Angular JS
+Node JS
+
+MERN Developer  MEAN JS
+ -->
