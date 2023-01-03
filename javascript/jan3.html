@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!-- Internal Javascript -->
+<script>
+    // scope of variables declared through 'var' is global.
+    // global vs 'Block Level'(local)
+    /*
+    var a = 10;
+    let c = 30;
+    {
+        // console.log(a);
+        var b = 20;
+        let c = 35;
+        c++;
+        // console.log(c);
+        var a = 15;
+        a++;
+        // console.log(a);
+        let d = 40;
+    }
+    // console.log(a);
+    // console.log(b);
+    // console.log(c);
+    // declaring variables using 'let'
+
+    // console.log(d);
+    {
+        console.log(d);
+    }
+    */
+    // Differences between 'var' & 'let'
+    /*
+    scope of variables declared through 'var' is global.
+    scope of variables declared through 'let' is block-level.
+
+    variables declared through 'var' can be redeclared.
+    variables declared through 'let' cannot be redeclared.
+    */
+    /*
+    var a;
+    a = 10;
+    var a;
+    a = 11;
+
+    let b;
+    b = 20;
+    // let b;
+    b = 21;
+    // let a;
+    // var b;
+    */
+
+    // declaring constants
+    // const PI = 3.14;
+    // PI = 3.1415;
+
+    // Not Allowed:
+    // const e;
+    // e = 2.71;
+
+    /*
+    Operators in JS:
+    1. Arithmetic: +, -, *, /, % (remainder), **, ++, --
+    2. Conditional/Conditions/Relational/Comparision Operators:
+        <, <=, >, >=, ==, !=, ===, !==, ? (ternary operator)
+    3. Logical Operators: &&, ||, !
+    4. Assignment Operators:
+        =
+            let a = 5;
+                <--
+            let 5 = a;   wrong
+            c = a + b;
+            a + b = c;
+        Shorthand Operators:
+            +=, -=, *=, /=, %=, **=
+            a = a + b   =>  a += b
+    */
+    
+    // let a = 5;
+    // console.log(3 ** 5);
+    // console.log(a++);
+    // console.log(a);
+    // console.log(++a);
+    // console.log(11 % 4);
+    // console.log(11 / 4);
+    // let b = "5";
+    // console.log(a == b);
+    // console.log(a === b);
+    // console.log(a != b);
+    // console.log(a !== b);
+
+    // Taking input from user:
+    // let marks = prompt("Enter Marks:");
+    // marks > 35 ? console.log("Pass") : console.log("Fail");
+
+    // is the number greater than 0? yes- positive, no- is the number < 0? yes- negative, otherwise- zero
+
+    // let number = prompt("Enter any number:");
+    // console.log(number > 0 ? "Positive" : number < 0 ? "Negative" : "Zero");
+
+    // Ask a number from user and print whether it is positive, negative or zero.
+
+    let a = 5, b = "Happy New Year!";
+    console.log(a + b);
+</script>
+</html>
