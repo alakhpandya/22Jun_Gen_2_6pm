@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // if-else
+    /*
+    let v1 = prompt("Enter any number:")
+
+    if (v1 > 5){
+        console.log("You have guessed correct number!");
+    }
+    console.log("That's it! The program is ended!");
+    */
+
+    /*
+    let marks = prompt("Enter marks: ")
+    if (marks >= 35){
+        console.log("Pass");
+    }
+    else{
+        console.log("Fail");
+    }
+    */
+    /*
+    let n = prompt("Enter any number:");
+    if (n > 0){
+        console.log("Positive");
+    }
+    else if (n == 0){
+        console.log("Neutral");
+    }
+    else{
+        console.log("Negative");
+    }
+    */
+    /*
+    let a = Number(prompt("Enter a number:"));
+    let b = Number(prompt("Enter another number:"));
+    let op = prompt("Choose the operation (+, -, * or /):");
+    switch(op){
+        case '+':
+            console.log(a + b);
+            break;
+        case '-':
+            console.log(a - b);
+            break;
+        case '*':
+            console.log(a * b);
+            break;
+        case '/':
+            console.log(a / b);
+            break;
+        default:
+            console.log("Invalid Operation...");
+    }
+    console.log("End of program.");
+    */
+    /*
+    PAR: 7
+    Strokes     Score
+    7           PAR
+    5 OR 6      BIRDY
+    2 TO 4      EAGLE
+    1           HOLE IN ONE!
+    8 OR 9      BOGEY
+    10          DOUBLE BOGEY
+    > 10        GO HOME
+
+    Take 'PAR' & 'Strokes' from user & print the appropriate score.
+    */
+    /*
+    let par = Number(prompt("Enter PAR:"));
+    let strokes = Number(prompt("Enter Strokes:"));
+    if (strokes <= 0 || par <= 0){
+        console.log("Invalid PAR or Strokes.");
+    }
+    else if (strokes == 1){
+        console.log("Hole in One!");
+    }
+    else if (strokes > 1 && strokes < par - 2){
+        console.log("Eagle");
+    }
+    else if (strokes >= par - 2 && strokes < par){
+        console.log("Birdie");
+    }
+    else if (strokes == par){
+        console.log("PAR");
+    }
+    else if (strokes > par && strokes <= par + 2){
+        console.log("Bogey");
+    }
+    else if (strokes == par + 3){
+        console.log("Double Bogey");
+    }
+    else if (strokes > par + 3){
+        console.log("Go Home!");
+    }
+    */
+
+    /*
+    function average(a, b){
+        let avg;
+        avg = (a + b)/2;
+        console.log(avg);
+        return avg;
+    }
+
+    average(10, 15);
+    */
+    /*
+    create a function that takes two arguments: par & strokes and log the score on the console. Also write the main program that asks the values of par & strokes from the user & passes to the function.
+    */
+    /*
+    function printScore(par, strokes){
+        let score;
+        if (strokes <= 0 || par <= 0){
+            score = "Invalid PAR or Strokes.";
+        }
+        else if (strokes == 1){
+            score = "Hole in One!";
+        }
+        else if (strokes > 1 && strokes < par - 2){
+            score = "Eagle";
+        }
+        else if (strokes >= par - 2 && strokes < par){
+            score = "Birdie";
+        }
+        else if (strokes == par){
+            score = "PAR";
+        }
+        else if (strokes > par && strokes <= par + 2){
+            score = "Bogey";
+        }
+        else if (strokes == par + 3){
+            score = "Double Bogey";
+        }
+        else if (strokes > par + 3){
+            score = "Go Home!";
+        }
+        console.log(score);
+        return score;
+    }
+
+    let par = Number(prompt("Par:"));
+    let strokes = Number(prompt("Strokes:"));
+    printScore(par, strokes);
+    */
+
+    // Arrays
+    // let myArray = [13, 56, 43, 99.9, 23.54, 43, 87, 78.5];
+    // index no:    0   1   2    3     4     5   6    7
+    // console.log(myArray[3]);
+    /*
+    console.log(myArray.push(5000));
+    console.log(myArray);
+    myArray.pop();
+    myArray.pop();
+    console.log(myArray);
+    console.log(myArray.shift());
+    console.log(myArray);
+    console.log(myArray.unshift(1000));
+    console.log(myArray);
+    */
+    
+    let nested_array1 = [1, 2, [3, 4, 5], [5, 6, 7], 12.2, [10, 11, 12]];
+    let nested_array2 = [
+        1,
+        2,
+        [3, 4, 5],
+        [5, 6, 7],
+        12.2,
+        [10, 11, 12]
+    ]
+    // console.log(nested_array1)
+    // console.log(nested_array2)
+    console.log(nested_array1[2][1]);
+    nested_array2[1] = [11, 22, 33];
+    nested_array2[2] = "Meet";
+    nested_array2[3] = 55;
+    console.log(nested_array2)
+
+    delete nested_array2[5][1];
+    console.log(nested_array2)
+
+    </script>
+</html>
