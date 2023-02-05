@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Objects in js
+    // result = {'Maths':34, 'Physics':29, 'Computers':35};
+    // result = {Maths:34, Physics:29, 'Computer Science':35, '605hardware':32, Maths:14, "Chemistry":25};
+    /*
+    console.log(result);
+    // console.log(result[0]);
+
+    console.log(result.Maths);
+    console.log(result["Computer Science"]);
+    console.log(result["Maths"])
+    // console.log(result[Physics])
+    console.log(result.Chemistry);
+    myChemistryMarks = result.Chemistry;
+    */
+    // result["myCity"] = "Ahmedabad";
+
+    // console.log(result);
+
+
+    // Use of Objects as look up:
+    /*
+    let a = Number(prompt("Enter a number:"));
+    let b = Number(prompt("Enter another number:"));
+    let op = prompt("Choose the operation (+, -, * or /):"); // +
+    let lookUpTable = {
+        "+" : a + b,
+        "-" : a - b,
+        "*" : a * b,
+        "/" : a / b
+    }
+    console.log(lookUpTable[op]);
+    */
+
+    
+    let bollywoodHero = {
+        hat : "Red",
+        "t-shirt" : "Parrot Green",
+        trousers : "Yellow",
+        shoes : "Pink",
+        tie : "White",
+        "common sense" : null
+    }
+
+    // console.log(bollywoodHero.hasOwnProperty('tail'));
+    // console.log(bollywoodHero.hasOwnProperty('shoes'));
+    // console.log(bollywoodHero["shoes"]);
+    // console.log(bollywoodHero["common sense"]);
+    delete bollywoodHero["common sense"];
+    console.log(bollywoodHero);
+
+    // Create a function that takes two arguments: object & property. It should return "This property does not exist in this object." if the given property ('tail' in this example) does not exist in the object, Otherwise it should return the value of that property. Also write a main program that calls this function and passes 'bollywoodHero' as object and 'tail' as property and logs whatever the function returns on the log.
+    
+
+    // Nested Objects
+    /*
+    myHome = {
+        garden : {
+            plants : "Rose",
+            trees : "Mango"
+        },
+        kitchen : "utensils",
+        myRoom : {
+            bed : "King Size",
+            mirror : "Huge",
+            wardrobe : "messy",
+            cupboard : {
+                racks : "books",
+                locker : {
+                    "outer part" : "money",
+                    "inner locker" : "gold"
+                }
+            }
+        }
+    }
+
+    // console.log(myHome.kitchen);
+    // console.log(myHome.garden);
+    // console.log(myHome.garden.trees);
+    // write a code that logs "money" on the console.
+    console.log(myHome.myRoom.cupboard.locker["outer part"]);
+    console.log(myHome["myRoom"]["cupboard"]["locker"]["outer part"]);
+    console.log(myHome["myRoom"].cupboard["locker"]["outer part"]);
+    */
+    /*
+    let myCollections = [
+        {
+            "artist":"2 unlimited",
+            "title":"no limit",
+            "release_year":1991,
+            "formats":[
+                "cassate",
+                "cd",
+                "mp3",
+                "youtube"
+            ],
+            "genre":"rap"
+        },
+
+        {
+            "artist":"Kungs",
+            "title":"this girl",
+            "release_year":2016,
+            "formats":[
+                "mp3",
+                "youtube"
+            ],
+            "genre":"remix"
+        }
+    ]
+
+    // write a code to access "cd" from this array
+    */
+
+    // Coding Challenge
+    var collection = {
+        "2548" : {
+            "album" : "Slippery When Wet",
+            "artist" : "Bon Jovi",
+            "tracks" : [
+                "Let It Rock",
+                "You Give Love a Bad Name"
+            ]
+        },
+        "2468" : {
+            "album" : "1999",
+            "artist" : "Prince",
+            "tracks" : [
+                "1999",
+                "Little Red Corvette"
+            ]
+        },
+        "1245" : {
+            "artist" : "Robert Palmer",
+            "tracks" : [ ]
+        },
+        "5439" : {
+            "album" : "ABBA Gold"
+        }
+    }
+
+    function updateRecords(id, prop, value){
+        // write your code here
+        return collection;
+    }
+
+// Write a function (updateRecords), where user can pass id (eg. "2548"), property (eg. "artist") and value (eg. "MJ"), that updates the value of the property of the given id in the collection and return the updated collection. If user passes the empty string as value, the function should completely delete that property. If the property is an array then the function should just add the value at the end of that property's array.
+/*
+Test Cases:
+updateRecords(5439, "album", "The Visitors");
+updateRecords(2548, "album", "");
+updateRecords(5439, "artist", "ABBA");
+updateRecords(2468, "tracks", "Lady Cab Driver");
+*/
+</script>
+</html>
