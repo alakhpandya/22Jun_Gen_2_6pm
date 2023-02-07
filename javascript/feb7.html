@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Profile Lookup coding challenge
+    /* 
+    Write code inside the lookUpProfile function so that when user passes name of a person and the property they want to know, our function returns that property's value for that particular person. For example, lookUpProfile("Dhiraj", "likes") should return ["Coding", "Teaching", "Pooja"]. If the name is not present in the contacts array, our function should return "No such contact", and if a property is not found corresponding to that person then our function should return "No such property"
+    
+
+    var contacts = [
+        {
+            "firstName":"Hetal",
+            "lastName":"Tewar",
+            "number":"0543236543",
+            "likes": ["Panipuri", "Sleep", "Shopping"]
+        },
+        {
+            "firstName":"Harry",
+            "lastName":"Potter",
+            "number":"0994372684",
+            "likes": ["Hogwarts", "Magic", "Hagrid"]
+        },
+        {
+            "firstName":"Sherlock",
+            "lastName":"Holmes",
+            "number":"05487345643",
+            "likes": ["Intriguing Cases", "Violin"]
+        },
+        {
+            "firstName":"Dhiraj",
+            "lastName":"Poojara",
+            "number":"09879472527",
+            "likes": ["Coding", "Teaching", "Pooja"]
+        },
+    ];
+
+    function lookUpProfile(name, prop){
+        // Your code goes here
+    }
+
+    var data1 = lookUpProfile("Alakh", "number");
+    var data2 = lookUpProfile("Dhiraj", "profession");
+    var data3 = lookUpProfile("Hetal", "likes");
+    var data4 = lookUpProfile("Sherlock", "lastName");
+
+    console.log(data1);
+    console.log(data2);
+    console.log(data3);
+    console.log(data4);
+
+    // Expected outputs:
+    output-1:
+        No such contact
+    Output-2:
+        No such property
+    Output-3:
+        ["Panipuri", "Sleep", "Shopping"]
+    Output-4:
+        Holmes
+    */
+    /*
+    for(let i = 0; i < 20; i++){
+        console.log(Math.random());
+        // gives a random fraction in the interval [0, 1)
+    }
+    */
+    // random number in the interval [5, 15)
+
+    // getMeARandomNumber()
+
+    // Write functions named scanArray() which takes a 2d matrix from the user & printArray() that prints a 2d matrix on the log. Write a main program to test both.
+    // Write a javascript program to find inverse of a 3x3 matrix.
+
+    // Parseint & Parsefloat
+    /*
+    let a = "5", b = "7.6";
+    let c = parseInt(a);
+    let d = parseFloat(b);
+    let e = Number(a);
+    let f = Number(b);
+    // console.log(typeof(a));
+    // console.log(typeof(b));
+    // console.log(typeof(c));
+    // console.log(typeof(d));
+    // console.log(typeof(e));
+    // console.log(typeof(f));
+
+    let p = Number("10101101");
+    let q = parseInt("10101101", 2);
+    console.log(p);
+    console.log(q);
+    */
+
+    function square(x){
+        return x*x;
+    }
+    
+    let n = [12, 4, -5, 0, 3, 8, -2];
+    
+    /*
+    let squares = []
+
+    for(let i = 0; i < n.length; i++){
+        squares.push(square(n[i]));
+    }
+    */
+
+    let squares = n.map(square);
+    console.log(squares);
+</script>
+</html>
+<!-- 
+    Next Class: filter, reduce & cbf
+ -->
