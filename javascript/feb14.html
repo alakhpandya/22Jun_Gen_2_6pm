@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    map, filter, reduce takes ONLY FUNCTIONS in their arguments, they don't take formulas.
+    we should not call the function in the argument.
+    functions passed in the argument of map MUST TAKE EXACTLY 1 ARGUMENT.
+    */
+    /*
+    function square(x){
+        // console.log(x*x);
+        return x*x;
+    }
+
+    function multiply(a, b){
+        return a * b;
+    }
+
+    function doNothing(){
+        let x = 5;
+        return x;
+    }
+    
+    let n = [12, 4, -5, 0, 3, 8, -2];
+    // let squares = n.map(square);
+    // let a = square(5);
+    // let b = square(3);
+    // console.log(a + b);
+    // console.log(square(2));
+    // console.log(squares);
+
+    // console.log(n.map(multiply));
+    // console.log(n.map(doNothing));
+    */
+
+    // filter
+    /*
+    function avg(arr){
+        // write your code here
+        sum = 0;
+        for(let i=0; i<arr.length; i++){
+            sum += arr[i];
+        }
+        let average = sum/arr.length;
+        return average;
+    }
+
+    function greaterThanAverage(temperature){
+        return temperature > average;
+    }
+
+    sensor_data = [-23, -18, -5, 0, 3, -25, -20, -18, -19, -17, 4];
+    average = avg(sensor_data);
+    // Write your code here
+    
+    // aboveAverageTemperatures = [];
+    // for(let i=0; i<sensor_data.length; i++){
+    //     if (greaterThanAverage(sensor_data[i])){
+    //         aboveAverageTemperatures.push(sensor_data[i]);
+    //     }
+    // }
+    
+    aboveAverageTemperatures = sensor_data.filter(greaterThanAverage);
+
+    console.log(aboveAverageTemperatures);
+    // Output:
+    // [-5, 0, 3]
+
+    // The function used in filter's argument MUST TAKE EXACTLY ONE ARGUMENT AND MUST RETURN EITHER TRUE OR FALSE.
+    */
+        
+    function absoluteAddition(a, b){
+        let sum = Math.abs(a) + Math.abs(b);
+        return sum;
+    }
+    
+    sensor_data = [-23, -18, -5, 0, 3, -25, -20, -18, -19, -17, 4];
+    
+    let absoluteSum;
+    // write your code here that uses absoluteAddition function to produce answer
+
+    console.log(absoluteSum);
+    // o/p: 152
+
+</script>
+</html>
+
+<!-- 
+    Next Class: reduce
+ -->
