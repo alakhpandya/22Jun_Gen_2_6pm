@@ -53,23 +53,25 @@
         let average = sum/arr.length;
         return average;
     }
-
     function greaterThanAverage(temperature){
         return temperature > average;
     }
-
     sensor_data = [-23, -18, -5, 0, 3, -25, -20, -18, -19, -17, 4];
     average = avg(sensor_data);
     // Write your code here
-    
     // aboveAverageTemperatures = [];
     // for(let i=0; i<sensor_data.length; i++){
     //     if (greaterThanAverage(sensor_data[i])){
     //         aboveAverageTemperatures.push(sensor_data[i]);
     //     }
     // }
-    
     aboveAverageTemperatures = sensor_data.filter(greaterThanAverage);
+    sensor_data = [
+        [-23, -18, -5],
+        [0, 3, -25],
+        [-20, -18, -19],
+        [-17, 4]
+    ]
 
     console.log(aboveAverageTemperatures);
     // Output:
@@ -77,19 +79,6 @@
 
     // The function used in filter's argument MUST TAKE EXACTLY ONE ARGUMENT AND MUST RETURN EITHER TRUE OR FALSE.
     */
-        
-    function absoluteAddition(a, b){
-        let sum = Math.abs(a) + Math.abs(b);
-        return sum;
-    }
-    
-    sensor_data = [-23, -18, -5, 0, 3, -25, -20, -18, -19, -17, 4];
-    
-    let absoluteSum;
-    // write your code here that uses absoluteAddition function to produce answer
-
-    console.log(absoluteSum);
-    // o/p: 152
 
 </script>
 </html>

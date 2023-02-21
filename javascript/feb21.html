@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    function absoluteAddition(a, b){
+        let sum = Math.abs(a) + Math.abs(b);
+        return sum;
+    }
+    
+    transactions = [-23, -18, -5, 10, 3, -25, -20, -18, -19, -17, 4, 9];
+    
+    // write your code here that uses absoluteAddition function to produce answer
+    /*
+    sum = absoluteAddition(transactions[0], transactions[1]);
+    for(let i = 2; i < transactions.length; i++){
+        sum += absoluteAddition(sum, transactions[i]);
+    }
+    */
+    sum = transactions.reduce(absoluteAddition);
+    // function called by reduce MUST TAKE EXACTLY TWO ARGUMENTS AND SHOULD RETURN SINGLE VARIABLE (NOT ARRAY).
+    console.log(sum);
+    // o/p: 171
+
+    // Call Back Functions: A function that is called by another function is known as Call Back Function.
+
+    // Anonymous Functions/Arrow Functions
+</script>
+</html>
