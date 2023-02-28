@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /*
+    function factorial(n){
+        let f = 1;
+        for(let i = 1; i <= n; i++){
+            f *= i;
+        }
+        return f;
+    }
+    */
+    // code
+
+    /*
+    const factorial = (n) => {
+        let f = 1;
+        for(let i = 1; i <= n; i++){
+            f *= i;
+        }
+        return f;
+    };
+    
+    console.log(factorial(5));
+    */
+    /*
+    const average = (a, b) => (a + b)/2;
+
+    console.log(average(10, 15));
+
+    const greetMeet = () => {
+        console.log("Hello Meet!");
+    }
+    */
+    /*
+    myLuckyNumbers = [2,3,5,10,12,13,7];
+    luckyFactorials = myLuckyNumbers.map((n) => {
+        let f = 1;
+        for(let i = 1; i <= n; i++){
+            f *= i;
+        }
+        return f;
+    });
+    console.log(luckyFactorials);
+    */
+
+    /*
+    sensor_data = [-23, -18, -5, 0, 3, -25, -20, -18, -19, -17, 4];
+
+    // convert this into an arrow function with name 'avg'
+    function avg(arr){
+        // write your code here
+        sum = 0;
+        for(let i=0; i<arr.length; i++){
+            sum += arr[i];
+        }
+        let average = sum/arr.length;
+        return average;
+    }
+    average = avg(sensor_data);
+    // Create this function inside filter as arrow function anonymously
+    function greaterThanAverage(temperature){
+        return temperature > average;
+    }
+    // Your rest of the code goes here
+
+    console.log(aboveAverageTemperatures);
+    */
+    /*
+    let today = new Date();
+    console.log(today);
+
+    let arr1 = [1,2,3];
+    let arr2 = [5,6,7];
+    console.log(arr1.concat(arr2));
+    */
+
+    // const a = 5.5;
+    // a = 7.5;
+
+    /*
+    const myArray = [1,2,3,4,5];
+    Object.freeze(myArray);
+    myArray[2] = 33;
+    console.log(myArray);
+    */
+
+    /*
+    const marks = {
+        "om" : 5,
+        "Ansh" : 75,
+        "Akash" : -10,
+        "Vraj" : 33
+    };
+    Object.freeze(marks)
+    marks["Ansh"] = 19;
+    marks["Akash"] = 100;
+    marks["Meet"] = 7;
+    console.log(marks["Ansh"] + marks["Akash"]);
+    console.log(marks);
+    */
+    // Create an arrow function that takes an object in the argument and freezes it.
+
+
+    // Default Arguments
+    /*
+    const average = (a, b = 0) => (a + b)/2;
+
+    console.log(average(10));
+    console.log(average(10, 20));
+    */
+
+    // Varaible length arguments : rest operator
+    /*
+    const average = (...args) => {
+        console.log(args);
+    }
+    
+    const average = (a, b, ...args) => {
+        console.log(a);
+        console.log(b);
+        console.log(args);
+    }
+
+    // average(10,20,30,40);
+    average(10,20);
+    */
+    let arr1 = ['Jan', 'Feb', 'Mar', 'Apr'];
+    // let arr2 = arr1;
+    
+
+    // rest operator as spread operator
+    let arr2 = [...arr1];
+    arr1.pop();
+    console.log(arr1);
+    console.log(arr2);
+    
+</script>
+</html>
+
+<!-- 
+    Next Class: Destructuring Assignment
+ -->
