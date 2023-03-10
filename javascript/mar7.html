@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Destructuring Assignment
+    
+    // import {func1, func2} from myLibrary;
+    /*
+    let result = {
+        "Physics" : 49,
+        "Maths" : 45,
+        "JavaScript" : 50,
+        "CSS" : 50
+    };
+
+    
+    let
+    Physics = result.Physics,
+    Maths = result["Maths"],
+    JavaScript = result["JavaScript"];
+    
+    // let {Physics, Maths, JavaScript} = result;
+    // let {Physics, JavaScript, CSS} = result;
+    let {Physics, CSS} = result;
+    console.log(Physics);
+    // console.log(Maths);
+    // console.log(JavaScript);
+    console.log(CSS);
+
+    // let {Processor, RAM, Price} = product_data;
+    
+
+    let {Physics : sub1, CSS : sub2} = result;
+    console.log(sub1);
+    console.log(sub2);
+    */
+    
+    /*
+    const avg_temp = {
+        today : 35,
+        tomorrow : 41
+    }
+    
+    // Create an arrow function with name 'get_tomorrows_temp' here that takes an argument: obj & returns an integer named 'temperature_of_tomorrow' using destructuring assignment
+    
+    const get_tomorrows_temp = (avg_temp) => {
+        let {tomorrow : temperature_of_tomorrow} = avg_temp;
+        return temperature_of_tomorrow;
+    }
+    
+    console.log(get_tomorrows_temp(avg_temp));
+    */
+    /*
+    const forecast = {
+        today : {min : 25, max : 39},
+        tomorrow : {min : 27, max : 41}
+    }
+
+    // Create an arrow function here that takes an object in argument & returns a variable called 'max_temp_of_tomorrow' using destructuring assignment
+
+    console.log(get_max_temp_of_tomorrow(forecast));
+    */
+
+    // Destructuring from an array:
+    let myArray = [1,2,3,4,5];
+    /*
+    let [a, b, c, d, e] = myArray;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    console.log(d);
+    console.log(e);
+    */
+    /*
+    let [a, b, c] = myArray;
+    console.log(a);
+    console.log(b);
+    console.log(c);
+    */
+    /*
+    let [a, b, , , e] = myArray;
+    console.log(a);
+    console.log(b);
+    console.log(e);
+    */
+
+    let [a, b, ...remaining] = myArray;
+    console.log(a);
+    console.log(b);
+    console.log(remaining);
+</script>
+</html>
+<!-- 
+    Next Class: more about destructuring assingment
+ -->
