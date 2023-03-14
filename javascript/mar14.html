@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    /*
+    const removeFirstTwoElements = (arr) => {
+        let [, , ...result_arr] = arr;
+        return result_arr;
+    }
+    */
+
+    // swapping two variables using destructuring
+    /*
+    var a = 10, b = 20;
+    let swap = () => {
+        [a, b] = [b, a];
+    }
+    console.log(a);
+    console.log(b);
+    */
+
+    // Destructuring assignment inside the argument of a function.
+    /*
+    const stats = {
+        max : 56.78,
+        standard_deviation : 4.34,
+        median : 34.54,
+        mode : 23.87,
+        min : -0.75,
+        average : 35.85
+    };
+    const stats2 = {
+        max : 156.78,
+        standard_deviation : 4.34,
+        median : 34.54,
+        mode : 23.87,
+        min : 5.75,
+        average : 35.85
+    };
+    
+    // const findRange = ({max, min}) => {
+    const findRange = ({max : biggest, min : smallest}) => {
+        
+        // let range = obj["max"] - obj["min"];
+        
+        // let range = max - min;
+        let range = biggest - smallest;
+        return range;
+    }
+    console.log(findRange(stats));
+    console.log(findRange(stats2));
+    */
+
+    // Template Literals
+    /*
+    let sen1 = 'I don\'t know much about this news.';
+    let para1 = `Hello!
+                How are you?`
+    console.log(para1);
+    let appraisal;
+    let faculties = ["Rahul", "Shruti", "Madhusudan Sir", "Alakh"];
+    let amount1 = [100000, 200000, 300000, 400000];
+    let amount2 = [200000, 400000, 600000, 800000];
+    for(let i = 0; i < 4; i++){
+        appraisal = `Dear ${faculties[i]}!
+    On the basis of your performance & the feedback from the students of your batch, we are pleased to raise your salary from ${amount1[i]} to ${amount2[i]} effective immediately.
+    Best Regards,
+    Dhiraj Poojara`;
+        console.log(appraisal);
+    }
+    */
+
+    // Coding Challenge
+    /*
+    const result = {
+        success: ["max-length", "no-amd", "prefer-arrow-functions"],
+        failure: ["no-var", "var-on-top", "linebreak"],
+        skipped: ["id-blacklist", "no-dup-keys"]
+    };
+
+    function makeList(arr){
+        const resultDisplayArray = [];
+        // Write your code here
+        return resultDisplayArray
+    }
+
+    console.log(makeList(result.skipped))
+    */
+    /*
+    Complete the above code so that the:
+    makeList(result.failure) should return:
+    [
+        <li class="text-warning">no-var</li>,
+        <li class="text-warning">var-on-top</li>,
+        <li class="text-warning">linebreak</li>
+    ]
+    */
+
+    // Concise Object Literals
+    /*
+    let createPerson = (name, age, gender) => {
+        return {
+            name: name,
+            age: age,
+            gender: gender
+        }
+    }
+    */
+    let createPerson = (name, age, gender) => ({name, age, gender})
+
+    let p1 = createPerson("Obama", 67, "Male");
+    let p2 = createPerson("Cherish", 20, "Male");
+    console.log(p1);
+    console.log(p2);
+
+    // Next Class: 'this' keyword
+</script>
+</html>
