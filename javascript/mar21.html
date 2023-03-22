@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+/*
+    let bicycle = {
+        wheels : 2,
+        gears : 3,
+        changeGear : function (newGear) {
+            bicycle.gears = newGear;
+        }
+    }
+*/
+
+/*
+    let car = {
+        wheels : 5,
+        gear : 3,
+        changeGear(newGear) {
+            this.gears = newGear;   // this: car
+        }
+    }
+
+    let bicycle = {
+        wheels : 2,
+        gears : 3,
+        changeGear(newGear) {
+            this.gears = newGear;   // this: bicycle
+        }
+    }
+    
+    function genius(){
+        this.Harshil = "Genius";   // this: window object
+    }
+
+    // console.log(bicycle);
+    // nextGear = Number(prompt("Enter new gear:"));
+    // bicycle.changeGear(nextGear);
+    // console.log(bicycle);
+
+    // console.log(window);
+    // console.log(document);
+
+    genius();
+    console.log(window);
+*/
+
+    /*
+    let spaceShuttle = function(targetPlanet){
+        this.targetPlanet = targetPlanet;
+    };
+    let discovery = new spaceShuttle("Mars");
+    console.log(discovery);
+    var marsRover = new spaceShuttle("Jupiter");
+    console.log(marsRover);
+    */
+
+    // Using constructor function
+    /*
+    class car{
+        constructor(model_name, price, fuel_type){
+            this.model_name = model_name;
+            this.price = price;
+            this.fuel_type = fuel_type;
+        }
+    }
+
+    let c1 = new car("A8", 12000000, "Diesel");
+    c1.seating_capacity = 5;
+    console.log(c1);
+    */
+
+
+    /*
+    function createVegetable(){
+        class vegetables{
+            constructor(color){
+                this.color = color;
+            }
+        }
+        return vegetables;
+    }
+
+    const myShop = createVegetable();
+    let tomato = new myShop('Red');
+    let lemon = new myShop('Yellow');
+
+    const yourShop = createVegetable();
+    let beetroot = new yourShop('Maroon');
+    let cabbage = new yourShop('Green');
+
+    console.log(tomato);
+    console.log(myShop);
+    */
+
+    class Book{
+        constructor(writer){
+            this._auhor = writer;    // protected
+        }
+
+        // getter
+        get writer(){
+            return this._auhor;
+        }
+
+        // setter
+        set writer(new_writer){
+            this._auhor = new_writer;
+        }
+    }
+
+    // let b1 = new Book("Ansh");
+    // console.log(b1);
+    // b1.auhor = "vinit";
+    // console.log(b1);
+
+    let b1 = new Book("Ansh");
+    console.log(b1.writer);
+    b1.writer = "vinit";
+
+    let b2 = new Book("Vansh");
+    console.log(b2.writer);
+    b2.writer = "Om";
+    console.log(b2.writer);
+</script>
+
+</html>
