@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    }
+
+    .main{
+        /* border: red 2px solid; */
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgb(4, 15, 41), rgb(15, 28, 54), rgb(23,38,69), rgb(45,59,88), rgb(62,78,112))
+    }
+
+    .box{
+        position: absolute;
+        left: 33%;
+        top: 30%;
+        border-radius: 10px;
+        width: 450px;
+        height: 280px;
+        border: white 2px solid;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box button:hover {
+        cursor: pointer;
+        background-color: rgb(182, 180, 180);
+        outline: none;
+    }
+
+    .box button{
+        width: 342px;
+        font-size: 17px;
+        padding: 5px 0px 5px 0px;
+        margin: 1px 0px 1px 0px;
+        transition: background-color 0.5s;
+    }
+
+    .box p{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 20px 0px 20px 0px;
+        font-size: 27px;
+        color: white;
+    }
+</style>
+<body>
+    <div class="main">
+        <div class="box">
+            <p class="movie-list">Favourite Movie Franchise</p>
+            <button class="movie-name" id="matrix">The Matrix</button>
+            <button class="movie-name">Star Wars</button>
+            <button class="movie-name">Harry Potter</button>
+            <button class="movie-name">Lord of the Rings</button>
+            <button class="movie-name">Marvel</button>
+        </div>
+    </div>
+</body>
+<script>
+    // DOM: Document Object Model
+    // Selcting by id
+    /*
+    let myFavoriteMovie = document.getElementById('matrix');
+    // console.log(document.getElementById('matrix'));
+    */
+
+    // Selecting by class name
+    /*
+    let a = document.getElementsByClassName("movie-name");
+    console.log(a);
+    let b = document.getElementsByClassName('movie-list');
+    console.log(b);
+    */
+    
+    // Selecting by tag
+    /*
+    let div_tags = document.getElementsByTagName('div');
+    console.log(div_tags);
+    */
+
+    // Query Selector
+    /*
+    let myMovie = document.querySelector('div');
+    console.log(myMovie);
+
+    let yourMovie = document.querySelector('#matrix');
+    console.log(yourMovie);
+
+    let ourMovie = document.querySelector('.movie-list');
+    console.log(ourMovie);
+    */
+
+    // Query Selector All
+    /*
+    let allPara = document.querySelectorAll('p');
+    console.log(allPara);
+
+    let firstMovie = document.querySelectorAll('#matrix');
+    console.log(firstMovie);
+
+    let allMovies = document.querySelectorAll('.movie-name');
+    console.log(allMovies);
+    */
+
+    let firstMovie = document.getElementById('matrix');
+    firstMovie.style.backgroundColor = 'Orange';
+    firstMovie.style.fontWeight = '700';
+    firstMovie.style.fontFamily = 'cursive';
+
+    let allMovies = document.getElementsByClassName('movie-name');
+    // allMovies[3].style.color = 'Red';
+    for(let i = 0; i < allMovies.length; i++){
+        allMovies[i].style.color = 'Red';
+    }
+</script>
+</html>
