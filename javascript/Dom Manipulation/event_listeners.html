@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/eventcss.css">
+</head>
+
+<body>
+    <div class="box"></div>
+    <div class="cart">
+        <div class="cart_1">
+            <h4>Example 1</h4>
+            <button onclick="alert('I love javascript!')">Enter</button>
+        </div>
+        <div class="cart_2">
+            <h4>Example 2</h4>
+            <button id="enter-2">Enter</button>
+        </div>
+        <div class="cart_3">
+            <h4>Example 3</h4>
+            <button onclick="ent3()">Enter</button>
+        </div>
+    </div>
+    <div class="form">
+        <h1>Event Listeners</h1>
+    </div>
+</body>
+<script>
+    let enter2 = document.getElementById('enter-2')
+    /*
+    function ent2(){
+        alert('You love javascript!')
+    }
+    enter2.addEventListener('click' , ent2)
+    */
+    /*
+    enter2.addEventListener('click', () => {
+        alert('You love javascript!')
+    })
+    */
+
+    let ent3 = () => {
+        alert('We love Javascript!')
+    }
+
+    let cart1 = document.querySelector('.cart_1')
+    console.log(cart1);
+    cart1.addEventListener('mouseenter', () => {
+        cart1.style.backgroundColor = 'yellow'
+    })
+    cart1.addEventListener('mouseout', () => {
+        cart1.style.backgroundColor = 'orangered'
+    })
+</script>
+</html>
