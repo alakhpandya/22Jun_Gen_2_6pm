@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template-3</title>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        height: 100vh;
+        width: 98vw;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background: rgb(11, 26, 59);
+        background: linear-gradient(180deg, rgba(11, 26, 59, 1) 0%, rgba(62, 78, 111, 1) 100%);
+    }
+
+    .main h1 {
+        color: white;
+        font-size: 3rem;
+        margin-bottom: 3rem;
+    }
+
+    .reveal{
+        border: 2px solid white;
+        font-size: 1.5rem;
+        width: 15vw;
+        border-radius: 10px;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .show-hide{
+        /* display: none; */
+        visibility: hidden;
+    }
+
+    .info {
+        border: 2px solid white;
+        border-radius: 10px;
+        width: 85%;
+        padding: 1rem;
+        color: white;
+    }
+
+    .main {
+        padding: 0rem 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .combo{
+        display: flex;
+        gap: 1rem;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1>Event Listeners</h1>
+        <div class="combo">
+            <div class="reveal">Hide</div>
+            <div class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore suscipit ab, et voluptatem omnis incidunt iste adipisci rerum voluptates, similique aspernatur voluptatum nobis. Non, laboriosam dolor, distinctio doloribus nisi saepe corrupti ad nam hic nulla ducimus cum modi aspernatur sint incidunt id minus inventore voluptates? Quidem, mollitia ab eaque excepturi ducimus laboriosam nisi. Veritatis eos inventore, autem culpa quaerat porro saepe rerum omnis tenetur suscipit possimus harum similique impedit laborum labore esse rem. Est maiores assumenda sint perferendis dolores, vitae amet quo nam placeat! Voluptates ipsum quis dicta, delectus dolore tempore quos aliquid nihil ea reiciendis exercitationem fugit. Impedit esse cupiditate enim, ut voluptatum, tempore et optio ab provident exercitationem iure fuga repellendus? Et repellendus est repudiandae eum. Illo repudiandae itaque quae sapiente, atque alias odit, earum et, dolorem quibusdam asperiores! Natus id placeat ratione quibusdam, illum maiores. Officiis tempore molestiae numquam in ea quibusdam quidem culpa at iusto voluptatum.</div>
+        </div>
+    </div>
+</body>
+<script>
+    let reveal_btn = document.querySelector('.reveal');
+    let info = document.querySelector('.info');
+
+    reveal_btn.addEventListener('click', () => {
+        if (info.classList.contains('show-hide')){
+            info.classList.remove('show-hide');
+            reveal_btn.innerText = 'Hide';
+        }
+        else{
+            info.classList.add('show-hide')
+            reveal_btn.innerText = 'Reveal';
+        }
+    })
+
+    // reveal_btn.addEventListener('click', () => {
+    //     info.classList.toggle('show-hide');
+    // })
+</script>
+</html>

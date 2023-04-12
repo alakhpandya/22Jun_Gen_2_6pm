@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slide5.css">
+</head>
+
+<body>
+    <div id="container" class="box">
+        <div id="outer-box" class="form">
+            <p>2</p>
+            <div id="cart1" class="cart_1">
+                <p>1</p>
+                <a href="#" id="click">Click</a>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let container = document.getElementById('container');
+    let outer_box = document.getElementById('outer-box');
+    let cart1 = document.getElementById('cart1');
+    let click = document.getElementById('click');
+
+    click.addEventListener('click', () => {
+        console.log("click clicked");
+    })
+    cart1.addEventListener('click', () => {
+        console.log("cart1 clicked");
+    })
+    outer_box.addEventListener('click', () => {
+        console.log("outer box clicked");
+    })
+    container.addEventListener('click', (event) => {
+        console.log("container clicked");
+        event.stopPropagation();
+        console.log(event);
+        element = event.target;
+        element.style.backgroundColor = 'red';
+    })
+    window.addEventListener('click', () => {
+        console.log("window clicked");
+    })
+
+    // click.addEventListener('click', () => {
+    //     console.log("click clicked");
+    // }, true)
+    // cart1.addEventListener('click', () => {
+    //     console.log("cart1 clicked");
+    // }, true)
+    // outer_box.addEventListener('click', (e) => {
+    //     console.log("outer box clicked");
+    //     e.stopPropagation();
+    // }, true)
+    // container.addEventListener('click', () => {
+    //     console.log("container clicked");
+    // }, true)
+    // window.addEventListener('click', () => {
+    //     console.log("window clicked");
+    // }, true)
+</script>
+</html>
