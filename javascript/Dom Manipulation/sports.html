@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        height: 100vh;
+        background-image: linear-gradient(to bottom, rgb(4, 15, 41), rgb(15, 28, 54), rgb(23, 38, 69), rgb(45, 59, 88), rgb(62, 78, 112))
+    }
+
+    .main-box {
+        position: absolute;
+        display: flex;
+        border: white 2px solid;
+        /* height: 20rem; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 1rem;
+    }
+
+    .b{
+        border: white 2px solid;
+        height: 2rem;
+        width: 6rem;
+        margin: 1rem 0;
+        text-align: center;
+        color: white ;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 0.5rem 3rem;
+        
+    }
+</style>
+
+<body>
+    <div class="main-box">
+        <p class="b">football</p>
+        <p class="b">cricket</p>
+        <p class="b"> golf</p>
+        <p class="b"> tennis</p>
+        <p class="b"> boxing</p>
+        <p class="b"> basketball</p>
+    </div>
+</body>
+<script>
+    let box = document.querySelector('.main-box');
+    box.addEventListener('click', (e) => {
+        // box.style.backgroundColor = 'yellow';
+        // console.log(e);
+        e.target.style.backgroundColor = "yellow";
+    })
+</script>
+
+</html>
+
