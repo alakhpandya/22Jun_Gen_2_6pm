@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main {
+            /* border: 2px solid red; */
+            height: 100vh;
+            background: url('/water-g124b35680_1920.jpg') center center/cover;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            /* border: 2px solid red; */
+            width: 40%;
+            border-radius: 20px;
+            padding: 20px 0px;
+            position: absolute;
+            transform: translate(75%, 150%);
+            background-color: white;
+        }
+
+        .btn button {
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+
+        #btn-1 {
+            background-color: green;
+        }
+
+        #btn-2 {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="time-box">
+                <span id="hour">00</span>
+                <span>:</span>
+                <span id="min">00</span>
+                <span>:</span>
+                <span id="sec">00</span>
+                <span>:</span>
+                <span id="msec">000</span>
+            </div>
+            <div class="btn">
+                <button id="btn-1"><i class="fa-solid fa-play"></i></button>
+                <button id="btn-2"><i class="fa-solid fa-rotate-left"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://kit.fontawesome.com/bff484c752.js" crossorigin="anonymous"></script>
+</body>
+<script src="/main.js"></script>
+</html>

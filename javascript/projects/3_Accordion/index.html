@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    body {
+        background: url(./about_us_img.jpg) no-repeat center center/cover;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    div {
+        margin: 0.5rem 0;
+    }
+
+    .main-title {
+        font-size: x-large;
+        font-weight: 900;
+    }
+
+    .title {
+        font-size: large;
+    }
+
+    .content {
+        font-size: medium;
+    }
+
+    .main {
+        border-radius: 20px;
+        background-color: white;
+        padding: 2rem;
+        /* margin: .5rem 4rem; */
+        margin: auto;
+        /* height: 90vh; */
+        width: 60vw;
+        /* position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); */
+    }
+
+    .main-title {
+        text-align: center;
+    }
+    .minus{
+        cursor: pointer;
+    }
+    hr{
+        height: 1.5px;
+        background-color: black;
+    }
+    .faq-box{
+        height: 4rem;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+    .show{
+        height: 8rem;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="main-title">Frequently Asked Questions!!!</div>
+        <div class="faq-box">
+            <div class="flex">
+                <div class="title">What is the return policy</div>
+                <div class="minus">+</div>
+            </div>
+            <hr id="hr1">
+            <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates magnam sunt enim
+                maiores, obcaecati neque, nobis, fugit excepturi aut consectetur repellat fugiat tempore similique
+                beatae nisi. Sapiente voluptas quibusdam dolore molestiae eos? Eius, voluptatibus.
+            </div>
+        </div>
+        <div class="faq-box">
+            <div class="flex">
+                <div class="title">What is the return policy</div>
+                <div class="minus">+</div>
+            </div>
+            <hr id="hr2">
+
+            <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates magnam sunt enim
+                maiores, obcaecati neque, nobis, fugit excepturi aut consectetur repellat fugiat tempore similique
+                beatae nisi. Sapiente voluptas quibusdam dolore molestiae eos? Eius, voluptatibus.
+            </div>
+        </div>
+        <div class="faq-box">
+            <div class="flex">
+                <div class="title">What is the return policy</div>
+                <div class="minus">+</div>
+            </div>
+            <hr id="hr3">
+            <div class="content">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates magnam sunt enim
+                maiores, obcaecati neque, nobis, fugit excepturi aut consectetur repellat fugiat tempore similique
+                beatae nisi. Sapiente voluptas quibusdam dolore molestiae eos? Eius, voluptatibus.
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    let dropdown_btn = document.getElementsByClassName('minus');
+    let faq_box = document.getElementsByClassName('faq-box');
+
+    for(let i = 0; i < dropdown_btn.length; i++){
+        dropdown_btn[i].addEventListener('click', () => {
+            // faq_box[0].classList.toggle('show');
+            if (faq_box[i].classList.contains('show')){
+                faq_box[i].classList.remove('show');
+                dropdown_btn[i].innerText = "+";
+            }
+            else{
+                faq_box[i].classList.add('show');
+                dropdown_btn[i].innerText = "_";
+            }
+
+            // if (faq_box[i].)
+        })
+    }
+</script>
+</html>

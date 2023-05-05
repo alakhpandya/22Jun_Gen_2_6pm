@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    /* border: 2px solid red; */
+    height: 100vh;
+    background: url('/Clock/water-g124b35680_1920.jpg') center center/cover;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    /* border: 2px solid red; */
+    width: 40%;
+    border-radius: 20px;
+    padding: 20px 0px;
+    position: absolute;
+    transform: translate(75%,150%);
+    background-color: white;
+}
+
+.btn button{
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#btn-1{
+    background-color: green;
+}
+
+#btn-2{
+    background-color: red;
+}
