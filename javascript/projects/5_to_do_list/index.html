@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fontawesome css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("https://images.unsplash.com/photo-1481627834876-b7833e8f5570?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=628&q=80");
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .container {
+            height: 50px;
+            width: 500px;
+            border-radius: 5px;
+            display: flex;
+            margin: auto;
+            background-color: #fff;
+        }
+
+        .text-box {
+            width: 500px;
+            height: 50px;
+            display: flex;
+            padding: 0 1rem;
+            align-items: center;
+        }
+
+        .text-box input {
+            width: 380px;
+            height: 30px;
+            border-radius: 5px;
+            padding-left: 20px;
+        }
+
+        .btn {
+            display: flex;
+            align-items: center;
+            margin-right: 1rem;
+            /* border: black solid; */
+        }
+
+        .btn button {
+            width: 45px;
+            height: 30px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .task-container{
+            background-color: #fff;
+            margin-top: 1rem;
+            border-radius: 5px;
+            padding: 1rem;
+        }
+        .task{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.2rem;
+        }
+        .task-seperator{
+            margin: 0.5rem 0;
+        }
+        .task-options{
+            border: solid 1px;
+            padding: 0.4rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        .task-options:hover{
+            color: #fff;
+        }
+        .edit-icon:hover{
+            background-color: black;
+            border-color: black;
+        }
+        .check-icon{
+            color: green;
+        }
+        .check-icon:hover{
+            background-color: green;
+            border-color: green;
+        }
+        .delete-icon{
+            color: red;
+        }
+        .delete-icon:hover{
+            background-color: red;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <div class="text-box">
+                <input type="text" placeholder="Enter Task...">
+            </div>
+            <div class="btn">
+                <button>+</button>
+            </div>
+        </div>
+        <!-- <div class="task-container">
+            <div class="task">
+                <p>abcd</p>
+                <div>
+                    <i class="fa-solid fa-pen task-options edit-icon"></i>
+                    <i class="fa-solid fa-check task-options check-icon"></i>
+                    <i class="fa-solid fa-trash task-options delete-icon"></i>
+                </div>
+            </div>
+        </div> -->
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
+
+
