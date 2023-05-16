@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Synchronous js
+    /*
+    console.log("A");
+    console.log("B");
+    console.log("C");
+    console.log("D");
+    console.log("E");
+    console.log("F");
+    */
+
+    // Asynchronous js
+    /*
+    console.log("A");
+    console.log("B");
+    setTimeout(() => 
+    {
+        console.log("C");
+    }, 4000)
+    console.log("D");
+    console.log("E");
+    console.log("F");
+    */
+
+    /*
+    1. Receive Order                        2
+    2. Chop the vegetables                  4
+    3. add the masala, water, noodles and   1
+       vegetables to the bowl
+    4. Boil                                 3
+    5. take the plate/bowl                  1
+    6. prepare noodles/sandwich             4
+    7. Serve the order                      1
+    */
+
+    // CBH: Call Back Hell
+    console.log("Recieving order...");
+    setTimeout(() => {
+        console.log("Order recieved, chopping the vegetables");
+        setTimeout(() => {
+            console.log("Veggies are chopped.");
+            setTimeout(() => {
+                console.log("masala, water, noodles and vegetables are added to the bowl, now they are boiling.");
+                setTimeout(() => {
+                    console.log("Boling completed, taking the plate.");
+                    setTimeout(() => {
+                        console.log("Plate taken, sandwich being prepared.");
+                        setTimeout(() => {
+                            console.log("Sandwich is ready.");
+                            setTimeout(() => {
+                                console.log("Here is your maggie sandwich!");
+                            }, 1000)
+                        }, 4000)
+                    }, 1000);
+                }, 3000)
+            }, 1000)
+        }, 4000);
+    }, 2000);
+    
+</script>
+</html>

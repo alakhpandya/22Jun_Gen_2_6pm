@@ -75,9 +75,14 @@
             justify-content: space-between;
             align-items: center;
             font-size: 1.2rem;
+            position: relative;
+            padding: 0.5rem 0;
         }
         .task-seperator{
-            margin: 0.5rem 0;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
         }
         .task-options{
             border: solid 1px;
@@ -116,7 +121,7 @@
             <div class="text-box">
                 <input type="text" placeholder="Enter Task...">
             </div>
-            <div class="btn">
+            <div class="btn"> 
                 <button>+</button>
             </div>
         </div>
@@ -128,6 +133,7 @@
                     <i class="fa-solid fa-check task-options check-icon"></i>
                     <i class="fa-solid fa-trash task-options delete-icon"></i>
                 </div>
+                <hr>
             </div>
         </div> -->
     </div>
