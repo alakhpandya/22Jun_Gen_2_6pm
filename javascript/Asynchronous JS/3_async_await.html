@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+//    syntax:
+    /*
+    async function fn(){
+        try{
+
+        }
+        catch(error){
+
+        }
+        finally{
+
+        }
+    }
+    */
+
+    /*
+    let kitchen = () => {
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                resolve(console.log("The dish is ready."))
+            }, 4000);
+        })
+    }
+
+    async function work(){
+        console.log("Welcome the guests.");
+        console.log("Recieve the order.");
+        await kitchen();
+        console.log("Close the kitchen.");
+        console.log("Do the dishes.");
+    }
+
+    work();
+    console.log("Drop the shutter.");
+    console.log("Count the collection.");
+    */
+
+    let available = {
+        type : ["Vegetable", "Chinese"],
+        masala : ["original", "custom"],
+        container : ["bowl", "plate"],
+        form : ["noodles", "sandwich"]
+    };
+
+    let is_open = true;
+    // let is_open = false;
+
+    function time(ms){
+        return new Promise((resolve, reject) => {
+            if (is_open){
+                setTimeout(resolve, ms);
+            }
+            else{
+                reject(console.log('Shop is closed.'));
+            }
+        });
+    }
+
+    async function kitchen(){
+        try{
+            console.log(`Receiving Order...`);
+            
+            await time(2000);
+            console.log(`${available.type[0]} maggi is selected.`);
+            
+            console.log(`Cooking started.`);
+
+            await time(1000);
+            console.log(`Water is boiled...`);
+            is_open = false;
+
+            await time(1000);
+            console.log(`${available.masala[0]} masala is added.`);
+
+            await time(2000);
+            console.log(`A ${available.container[0]} is taken.`);
+
+            await time(3000);
+            console.log(`${available.form[1]} is prepared.`);
+
+            await time(2000);
+            console.log(`Maggi is served to the customer!`);
+        }
+        catch{
+            console.log('Customer left the shop.')
+        }
+        finally{
+            console.log("Day ended, let's do accounting.");
+        }
+    }
+
+    kitchen();
+</script>
+</html>

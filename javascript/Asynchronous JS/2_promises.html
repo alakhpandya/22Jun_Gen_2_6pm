@@ -10,6 +10,80 @@
     
 </body>
 <script>
+    // resolve, reject, pending
+    /*
+    1. Receive Order                        2
+    2. Chop the vegetables                  4
+    3. add the masala, water, noodles and   1
+       vegetables to the bowl
+    4. Boil                                 3
+    5. take the plate/bowl                  1
+    6. prepare noodles/sandwich             4
+    7. Serve the order                      1
+    */
+
+
+    /*
+    Syntax:
+    let fn = (time, task_function) => {
+        return new Promise((resolve, reject) => {
+            // resolve part
+            if (resolve condition){
+                setTimeOut(() =>{
+                    resolve(task_function())
+                }, time)
+            }
+            // reject part
+            else{
+                reject(reject_function())
+            }
+        })
+    }
+
+    fn(time, task_function)
+    .then
+    .then
+    .
+    .
+    .
+    .
+    .catch
+    .finally
+    */
+
+    let isOpen = true;
+    // let isOpen = false;
+
+    let order = (time, task) => {
+        return new Promise((resolve, reject) => {
+            // resolve
+            if (isOpen){
+                setTimeout( () => {
+                    resolve(task());
+                }, time)
+            }
+            // reject
+            else{
+                reject(console.log("Shop is closed at the moment..."));
+            }
+        })
+    }
+
+    order(0, () => console.log("Recieving order..."))
+    .then(() => order(2000, () => console.log("Order recieved, chopping the vegetables")))
+    .then(() => order(4000, () => console.log("Veggies are chopped.")))
+    .then(() => order(1000, () => console.log("masala, water, noodles and vegetables are added to the bowl, now they are boiling.")))
+    .then(() => order(3000, () => {
+        console.log("Boling completed, taking the plate."); 
+        isOpen = false;
+    }))
+    .then(() => order(1000, () => console.log("Plate taken, sandwich being prepared.")))
+    .then(() => order(4000, () => console.log("Sandwich is ready.")))
+    .then(() => order(1000, () => console.log("Here is your maggie sandwich!")))
+    .then(() => order(2000, () => console.log("Here is your bill, give me the cash!")))
     
-</script>
+    .catch(() => console.log("Refund the customer..."))     // Will be executed if & only if a promise is rejected.
+
+    .finally(() => console.log("Day ended, let's count the collection!"))   // will be executed, no matter what.
+</script> 
 </html>
