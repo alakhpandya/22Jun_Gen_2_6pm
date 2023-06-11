@@ -54,5 +54,3 @@ Non-recursive Step:
 1st term = a
 """
 
-
-
