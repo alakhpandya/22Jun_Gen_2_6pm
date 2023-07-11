@@ -16,6 +16,21 @@ class Car:
         print("Seats:", self.seats)
         print()
 
+    def updateInfo(self):
+        print("\tEnter new info:")
+        self.model = input("\tModel: ")
+        self.fuel = input("\tFuel: ")
+        self.price = int(input("\tPrice: "))
+        self.seats = int(input("\tSeats: "))
+
+    @staticmethod
+    def printStock():
+        print("\tSr nos of all the cars in stock: ")
+        print("\tSr no.\tModel Name")
+        for i in range(len(Car.allCars)):
+            print(f"\t{i}\t{Car.allCars[i].model}")
+        c = int(input("\tEnter sr no: "))
+        return c
 
 c1 = Car("Audi A8", "Petrol", 20000000)
 # c1.displayInfo()
@@ -49,11 +64,12 @@ while True:
         1       Toyota Innova
         2       Scorpio
         """
-        c = int(input("\tEnter sr no: "))
+        c = Car.printStock()
         Car.allCars[c].displayInfo()
 
     elif op == 3:
-        pass
+        c = Car.printStock()
+        Car.allCars[c].updateInfo()
 
     elif op == 4:
         pass
