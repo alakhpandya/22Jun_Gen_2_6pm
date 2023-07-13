@@ -17,11 +17,19 @@ class Car:
         print()
 
     def updateInfo(self):
-        print("\tEnter new info:")
-        self.model = input("\tModel: ")
-        self.fuel = input("\tFuel: ")
-        self.price = int(input("\tPrice: "))
-        self.seats = int(input("\tSeats: "))
+        print("\tEnter new info: (press Enter to keep info same)")
+
+        model = input("\tModel: ")
+        if model != "": self.model = model
+
+        fuel = input("\tFuel: ")
+        if fuel != "": self.fuel = fuel
+
+        price = input("\tPrice: ")
+        if price != "": self.price = int(price)
+
+        seats = input("\tSeats: ")
+        if seats != "": self.seats = int(seats)
 
     @staticmethod
     def printStock():
@@ -80,3 +88,4 @@ while True:
     else:
         print("Invalid operation, please try again...")
 
+# Next class: decorators in detail
