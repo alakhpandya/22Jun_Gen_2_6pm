@@ -2,9 +2,14 @@ class Car:
     seats = 5
     allCars = []
 
-    def __init__(self, model, fuel, price):
+    def __init__(self, model:str, fuel:str, price:float):
+        assert isinstance(model, str), "Model name should be string only."
         self.model = model
+
+        assert isinstance(fuel, str), "Fuel type should be string only."
         self.fuel = fuel
+
+        assert isinstance(price, float), "Price should be float only."
         self.price = price
         Car.allCars.append(self)
 
@@ -40,7 +45,15 @@ class Car:
         c = int(input("\tEnter sr no: "))
         return c
 
-c1 = Car("Audi A8", "Petrol", 20000000)
+    @classmethod
+    def addNewCar(cls):
+        print("Enter the following details:")
+        model = input("Model name: ")
+        fuel = input("Fuel type: ")
+        price = int(input("Price: "))
+        return cls(model, fuel, price)
+
+c1 = Car("Audi A8", "Petrol", 2)
 # c1.displayInfo()
 # Car.allCars.append(c1)
 
@@ -52,6 +65,9 @@ c3 = Car("Scorpio", "Diesel", 2000000)
 c3.seats = 7
 # c3.displayInfo()
 
+# c4 = Car("911", "Petrol", 5.5)
+# c4.seats = 2
+
 while True:
     print("Press:")
     print("1 to add new car")
@@ -62,7 +78,9 @@ while True:
     op = int(input())
 
     if op == 1:
-        pass
+        # Maruti.addNewCar()
+        # Hyundai.addNewCar()
+        Car.addNewCar()
 
     elif op == 2:
         """
@@ -80,7 +98,8 @@ while True:
         Car.allCars[c].updateInfo()
 
     elif op == 4:
-        pass
+        c = Car.printStock()
+        Car.allCars.pop(c)
 
     elif op == 9:
         break
