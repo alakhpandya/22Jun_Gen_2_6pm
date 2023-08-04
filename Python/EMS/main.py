@@ -22,34 +22,41 @@ from developer import Developer
 from manager import Manager
 from peon import Peon
 from salesExecutive import SalesExecutive
+import sys
 
-
+def login():
+    while True:
+        print("Enter")
+        print("1 if you are an admin")
+        print("2 if you are an employee")
+        print("3 to exit")
+        user_type = int(input())
+        if user_type == 3:
+            return False
+        id = input("ID: ")
+        pwd = input("Password: ")
+        if user_type == 1:
+            department_code = Employee.authenticate_admin(id, pwd)
+        elif user_type == 2:
+            department_code = Employee.authenticate_other(id, pwd)
+        else:
+            print("Invalid. Please try again.")
+        if department_code:
+                return department_code
 
 p1 = Peon("Krunal", 23, "Male")  # Peon - 202104P114, alakh123
 a1 = Admin("Priyanka", 26, "Female")   # Admin
 m1 = Manager("Niti", 25, "Female")
 s1 = SalesExecutive("Sandeep", 23, "Male", "Ahmedabad West")
+p1.showInfo()
 # a1.showInfo()    
 # m1.showInfo()
 # s1.showInfo()
-Employee.all_eployees[3].showInfo()
-
-
-while True:
-    print("Enter")
-    print("1 if you are an admin")
-    print("2 if you are an employee")
-    user_type = int(input())
-    id = input("ID: ")
-    pwd = input("Password: ")
-    if user_type == 1:
-        authenticate_admin(id, pwd)
-    elif user_type == 2:
-        authenticate_other(id, pwd)
-    else:
-        print("Invalid. Please try again.")
-
+# Employee.all_eployees[3].showInfo()
 """
+if not login():
+    print("Sorry, could not logged you in...")
+    sys.exit()
 while True:
     print("Enter:")
     print("1 to add new employee")
@@ -59,5 +66,6 @@ while True:
     print("5 to remove an employee")
     
     print("9 to exit")
-    choice = 
+    action = int(input())
+
 """

@@ -1,0 +1,14 @@
+Sr	Name		Role
+1	Meet		student
+2	Amulakh		monitor
+3	Karmant		student
+4	Jenish		back bancher
+5	Khush		Anotator
+6	Harshil		mentor
+7	Om		coordinator
+8	Yash		student
+9	Cherish		student
+10	Ridham		youtuber
+11	Harsh		coordinator
+12	Nikunj		student
+13	Alakh		faculty
