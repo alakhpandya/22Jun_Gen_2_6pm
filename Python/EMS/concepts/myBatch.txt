@@ -1,0 +1,8 @@
+9	Cherish		student
+10	Ridham		youtuber
+11	Harsh		coordinator
+12	Nikunj		student
+13	Alakh		faculty
+14	Akash		Visiting Student
+15	Vansh		Offline Student
+16	Yash		student

@@ -48,12 +48,12 @@ p1 = Peon("Krunal", 23, "Male")  # Peon - 202104P114, alakh123
 a1 = Admin("Priyanka", 26, "Female")   # Admin
 m1 = Manager("Niti", 25, "Female")
 s1 = SalesExecutive("Sandeep", 23, "Male", "Ahmedabad West")
-p1.showInfo()
+# p1.showInfo()
 # a1.showInfo()    
 # m1.showInfo()
 # s1.showInfo()
 # Employee.all_eployees[3].showInfo()
-"""
+
 if not login():
     print("Sorry, could not logged you in...")
     sys.exit()
@@ -67,5 +67,3 @@ while True:
     
     print("9 to exit")
     action = int(input())
-
-"""

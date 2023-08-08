@@ -49,14 +49,27 @@ w       Write           Opens the file for writing only                 b       
                         Creates the file if it does not exist
                         Places the cursor at the begining of the file
 
-a       append
+a       append          Opens the file for writing only
+                        Does not erase the content of the file
+                        Creates the file if it does not exist
+                        Places the cursor at the end of the file
 
-x     Exclusively
-        Create
+x     Exclusively       Creates the file & opens it for writing only
+        Create          Raises FileExistError if file already exists
+                        Places the cursor at the begining of the file
 
-r+      read+
+r+      read+           Opens the file for reading & writing both
+                        Does not erase the content of the file
+                        Raises FileNotFoundError if the file does not exist
+                        Places the cursor at the begining of the file
 
-w+      write+
+w+      write+          Opens the file for reading & writing both
+                        Erases entire content of the file at the time of opening
+                        Creates the file if it does not exist
+                        Places the cursor at the begining of the file
 
-a+      append+
+a+      append+         Opens the file for reading & writing both
+                        Does not erase the content of the file
+                        Creates the file if it does not exist
+                        Places the cursor at the end of the file
 """
