@@ -12,3 +12,4 @@ Sr	Name		Role
 11	Harsh		coordinator
 12	Nikunj		student
 13	Alakh		faculty
+14	Akash		Visiting Student

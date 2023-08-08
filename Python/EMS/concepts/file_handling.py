@@ -38,10 +38,16 @@ f.close()
 """
 name_of_file_pointer = open("file name with extension and full path", "Mode1Mode2")
 
-Mode1   Name        Description                                     Mode2   Name
-r       Read        Opens the file for reading only                 t       text        default
+Mode1   Name            Description                                     Mode2   Name
+r       Read            Opens the file for reading only                 t       text        default
+                        Does not erase the content of the file
+                        Raises FileNotFoundError if the file does not exist
+                        Places the cursor at the begining of the file
 
-w       Write       Opens the file for writing only                 b       binary
+w       Write           Opens the file for writing only                 b       binary
+                        Erases entire content of the file at the time of opening
+                        Creates the file if it does not exist
+                        Places the cursor at the begining of the file
 
 a       append
 
