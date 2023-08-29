@@ -54,16 +54,43 @@ s1 = SalesExecutive("Sandeep", 23, "Male", "Ahmedabad West")
 # s1.showInfo()
 # Employee.all_eployees[3].showInfo()
 
-if not login():
+login_type = login()
+if not login_type:
     print("Sorry, could not logged you in...")
     sys.exit()
 while True:
-    print("Enter:")
-    print("1 to add new employee")
-    print("2 to see info of an employee")
-    print("3 to change info of an employee")
-    print("4 to view all employee")
-    print("5 to remove an employee")
-    
-    print("9 to exit")
-    action = int(input())
+    if login_type == "A":
+        print("Enter:")
+        print("1 to add new employee")
+        print("2 to see info of an employee")
+        print("3 to change info of an employee")
+        print("4 to view all employee")
+        print("5 to remove an employee")
+        
+        print("9 to exit")
+        action = int(input())
+
+        if action == 1:
+            pass
+
+        elif action == 2:
+            index = Employee.choseEmployee()
+            Employee.all_eployees[index].showInfo()
+
+        elif action == 3:
+            index = Employee.choseEmployee()
+            Employee.all_eployees[index].updateInfo()
+
+        elif action == 4:
+            Employee.showAllEmployees()
+
+        elif action == 5:
+            index = Employee.choseEmployee()
+            Employee.all_eployees[index].removeEmployee()
+            # Employee.removeEmployee(index)
+
+        elif action == 9:
+            break
+
+        else:
+            print("Invalid input, try again...")
