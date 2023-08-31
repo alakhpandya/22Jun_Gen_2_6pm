@@ -71,7 +71,22 @@ while True:
         action = int(input())
 
         if action == 1:
-            pass
+            print("Enter:")
+            print("1 to add an Admin")
+            print("2 to add a Sales Executive")
+            print("3 to add a developer")
+            print("4 to add a manager")
+            print("5 to add a peon")
+            emp_type = int(input())
+            class_selection = {
+                1 : Admin.addEmployee,
+                2 : SalesExecutive.addEmployee,
+                3 : Developer.addEmployee,
+                4 : Manager.addEmployee,
+                5 : Peon.addEmployee
+            }
+            class_selection[emp_type]()
+            Peon.addEmployee()
 
         elif action == 2:
             index = Employee.choseEmployee()

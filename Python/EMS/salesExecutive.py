@@ -14,3 +14,9 @@ class SalesExecutive(Employee):
         print("Target:", self.target)
         print("Area:", self.area)
         print(f"---------------------------------------------------------")
+
+    @classmethod
+    def addEmployee(cls):
+        name, age, gender = super().addEmployee()
+        area = input("Area: ")
+        return cls(name, age, gender, area)

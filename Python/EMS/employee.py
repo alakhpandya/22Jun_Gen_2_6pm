@@ -68,6 +68,14 @@ class Employee:
     # def removeEmployee(index):
     #     Employee.all_eployees.pop(index)
     #     Employee.all_eployees.insert(index, None)
+
+    @staticmethod
+    def addEmployee():
+        print("Enter the following details:")
+        name = input("Name: ")
+        age = int(input("Age: "))
+        gender = input("Gender: ")
+        return name, age, gender
     
     def authenticate_other(id, pwd):
         index = int(id[-3 : ]) - 101

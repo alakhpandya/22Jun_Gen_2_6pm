@@ -7,3 +7,8 @@ class Admin(Employee):
     def showInfo(self):
         super().showInfo()
         print(f"---------------------------------------------------------")
+
+    @classmethod
+    def addEmployee(cls):
+        name, age, gender = super().addEmployee()
+        return cls(name, age, gender)
