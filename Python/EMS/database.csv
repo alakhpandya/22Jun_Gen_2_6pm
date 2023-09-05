@@ -1,0 +1,5 @@
+{'name': 'Krunal', 'age': 23, 'gender': 'Male', 'date_of_joining': datetime.datetime(2023, 9, 5, 19, 38, 6, 387226), 'id': '202309P101', 'pwd': 'Krun123', 'is_active': True}
+{'name': 'Priyanka', 'age': 26, 'gender': 'Female', 'date_of_joining': datetime.datetime(2023, 9, 5, 19, 38, 6, 387226), 'id': '202309A102', 'pwd': 'Priy123', 'is_active': True}
+{'name': 'Niti', 'age': 25, 'gender': 'Female', 'date_of_joining': datetime.datetime(2023, 9, 5, 19, 38, 6, 387226), 'id': '202309M103', 'pwd': 'Niti123', 'is_active': True}
+{'name': 'Sandeep', 'age': 23, 'gender': 'Male', 'date_of_joining': datetime.datetime(2023, 9, 5, 19, 38, 6, 388224), 'id': '202309S104', 'pwd': 'Sand123', 'is_active': True, 'area': 'Ahmedabad West'}
+{'name': 'Kiran', 'age': 23, 'gender': 'Female', 'date_of_joining': datetime.datetime(2023, 9, 5, 19, 38, 27, 625596), 'id': '202309D105', 'pwd': 'Kira123', 'is_active': True}
